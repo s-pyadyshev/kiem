@@ -1,0 +1,74 @@
+$button-background-color: $color-primary;
+$button-background-color-hover: transparent;
+$button-border-color: $color-white;
+$button-color: $color-secondary;
+$button-color-hover: $color-white;
+$button-color-active: $color-white;
+
+.button,
+a.button {
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 40px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  min-width: auto;
+  outline: none;
+  appearance: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: $button-background-color;
+  color: $button-color;
+  border-radius: 10px;
+
+  @include desktop {
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 14px 38px;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: $color-orange;
+    border-color: $color-black;
+    color: $color-white;
+
+    .button__icon {
+      fill: currentColor;
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &--secondary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px rgba(42, 44, 81, 0.35);
+    background: rgb(24, 9, 1);
+    color: white;
+
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+      border-color: $color-primary;
+      color: $color-black;
+    }
+  }
+
+  &__icon {
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,44 @@
+footer.footer
+  .container
+    .footer__inner
+      .footer__info
+        .footer__info-item
+          a.footer__logo(href="#")
+            img(src="images/logo-kiem.svg" alt="logo KIEM." width="205" height="58")
+          p Adresregel 1
+          p Adresregel 2
+        .footer__info-item
+          .footer__logo.visible-laptop
+            img(src="images/logo-kiem-text.svg" alt="Groei in onderwijs." width="259" height="28")
+          a(href="tel:#") Telefoonnummer
+          a(href="mailto:#") E-mailadres
+        .footer__info-item
+          .footer__social
+            ul.footer__social-list
+              li.footer__social-item
+                a(href="#" target="_blank")
+                  +svg("linkedin")
+              li.footer__social-item
+                a(href="#" target="_blank")
+                  +svg("inst")
+          nav.footer__nav.visible-laptop
+            ul.footer__nav-list
+              li.footer__nav-item
+                a(href="#") Home
+              li.footer__nav-item
+                a(href="#") Wie zijn wij?
+              li.footer__nav-item
+                a(href="#") Ons aanbod voor groei
+              li.footer__nav-item
+                a(href="#") Interim en coaching
+
+      .footer__contact
+        h3
+          | Samen 
+          span verder
+          br
+          | groeien?
+        a.link__more(href="#")
+          span.link__more-title Neem contact op
+          +svg("arrow-right-bold")
+        img.footer__contact-logo(src="images/logo-kiem-md.svg" alt="logo KIEM." width="200" height="200")

@@ -1,0 +1,17 @@
+header.header
+  .container.container-sm
+    .header__inner
+      .header__inner-wrap
+        a.header__logo(href="/")
+          img(src="images/logo-kiem.svg" alt="logo KIEM." width="135" height="39")
+          img(src="images/logo-kiem-text.svg" alt="Groei in onderwijs." width="188" height="20")
+      .header__menu
+        +menu
+      .header__menu-toggle
+        button.menu-toggle.js-toggle-menu(type="button")
+          span.menu-toggle__text menu
+          span.menu-toggle__text sluiten
+          span.menu-icon
+            span.menu-icon__line
+            span.menu-icon__line
+            span.menu-icon__line

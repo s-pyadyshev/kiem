@@ -1,0 +1,33 @@
+extends pug/base
+
+prepend vars
+  - title = 'Contact'
+
+append vars
+ - pageWrapperClass = 'gradient-md-top-left'
+
+block content
+  section.page-header.contact
+    .page-header__inner.container.container-md
+      .page-header__text
+        h1
+            | Samen 
+            span verder
+            br
+            | groeien?
+        p Wil jij groeien met KIEM? Laat je gegevens achter, dan nemen wij snel contact met je op voor een vrijblijvend kennismakingsgesprek.
+        a.link__more(href="tel:0200010012")
+            +svg("arrow-right-bold")
+            | Of bel ons op &nbsp;
+            span 020-001 0012
+      form.page-header__form
+        .form-group
+          label(for="name").label  Voor- en achternaam
+          input#name.input(type="text" name="name" placeholder="Voor- en achternaam")
+        .form-group
+          label(for="email").label  E-mailadres
+          input#email.input(type="email" name="email" placeholder="E-mailadres")
+        .form-group
+          label(for="message").label  Bericht
+          textarea#message.textarea(name="message" placeholder="Hoe kunnen we je helpen?")
+        button.button(type="submit") Verzenden

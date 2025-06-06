@@ -1,0 +1,22 @@
+.offer-block {
+
+  @include desktop {
+    margin-bottom: 127px;
+  }
+
+  >p {
+    @include desktop {
+      margin-top: 0;
+      margin-bottom: 72px;
+    }
+  }
+
+  h2 {
+    letter-spacing: -0.8px;
+
+    @include desktop {
+      margin-bottom: 23px;
+      letter-spacing: -1.3px;
+    }
+  }
+}

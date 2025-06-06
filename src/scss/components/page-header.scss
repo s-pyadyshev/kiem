@@ -1,0 +1,21 @@
+.page-header {
+  padding-inline: 80px;
+
+  h1 {
+    font-variation-settings: "wght" 400;
+    color: $color-text-default;
+
+    span {
+      font-variation-settings: "wght" 700;
+      color: $color-primary;
+    }
+  }
+}
+
+.page-header__inner {
+  display: flex;
+}
+
+.page-header__text {
+  max-width: 560px;
+}

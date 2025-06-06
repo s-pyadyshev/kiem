@@ -1,0 +1,50 @@
+.info-block {
+  display: flex;
+  flex-direction: column-reverse;
+
+  h2 {
+    letter-spacing: -0.8px;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 44px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    width: 100%;
+
+    img {
+      margin-top: 10px;
+      width: 50%;
+    }
+
+    h2 {
+      letter-spacing: -1.3px;
+    }
+  }
+}
+
+.info-block__text {
+  width: 100%;
+  padding-left: 0;
+
+  h2 {
+    @include desktop {
+      margin-bottom: 49px;
+    }
+  }
+
+  p {
+    margin-block: 21px 28px;
+
+    @include desktop {
+      margin-block: 49px;
+    }
+  }
+
+  @include desktop {
+    padding-left: 146px;
+  }
+}

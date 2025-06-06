@@ -1,0 +1,99 @@
+.page-header.contact {
+  margin-bottom: 65px;
+  margin-top: 34px;
+
+  @include laptop {
+    margin-top: 90px;
+    margin-bottom: 140px;
+  }
+}
+
+.contact .page-header__text {
+  width: 100%;
+
+  h1 {
+    letter-spacing: -1px;
+  }
+
+  p {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+
+  @include desktop {
+    margin-right: 20px;
+    width: 390px;
+
+    h1 {
+      letter-spacing: -1.6px;
+    }
+
+    p {
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.contact .link__more {
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 16px;
+
+  svg {
+    margin-left: 0;
+    margin-right: 10px;
+    display: block;
+    color: #ff9841;
+    width: 13px;
+    height: 13px;
+  }
+
+  span {
+    text-decoration: underline;
+    color: #ff9841;
+  }
+
+  @include desktop {
+    font-size: 20px;
+  }
+}
+
+.page-header__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  gap: 32px;
+  width: 100%;
+  height: fit-content;
+
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: fit-content;
+  }
+
+  @include desktop {
+    margin-top: 41px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 45px;
+    margin-top: 10px;
+    width: 55.7%;
+
+    button {
+      margin-top: 0;
+    }
+  }
+}

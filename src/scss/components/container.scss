@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  margin-inline: auto;
+  max-width: $container-max-width;
+  padding-inline: $container-padding;
+
+  @include tablet {
+    padding-inline: $container-padding-tablet;
+  }
+
+  @include desktop-l {
+    padding-inline: $container-padding-desktop;
+  }
+}
+
+.container-md {
+  @include desktop-l {
+    padding-inline: $container-padding-desktop * 2;
+  }
+}
+
+.container--fluid {
+  max-width: 100%;
+}

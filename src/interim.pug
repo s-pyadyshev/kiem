@@ -1,0 +1,81 @@
+extends pug/base
+
+prepend vars
+  - title = 'Interim en coaching'
+
+append vars
+ - pageWrapperClass = 'gradient-md-top-right'
+
+block content 
+  section.page-header
+    .page-header__inner.container.container-md
+      .page-header__text
+        h1 
+            | Interim en
+            br
+            | coaching
+        p Soms heb je als school of team net even iets extra’s nodig: iemand die tijdelijk meedraait, structuur brengt of professionele begeleiding biedt. Onze mensen stappen in waar het nodig is. Of het nu gaat om leiderschap, teamontwikkeling of persoonlijke groei: wij staan naast je, denken mee en zetten beweging in gang. Tijdelijk aanwezig, blijvend van betekenis.
+      img(src="/images/content/interim/interim-page-header.svg" alt="Interim en coaching" width="557" height="380").page-header__image
+
+  section.section-mission
+    .container
+      +tabs(
+        'Meer over onze hulp',
+        '/images/content/interim/lamp.svg',
+        [
+          {
+            title: 'Interim',
+            content: `
+              <p>Soms is tijdelijke versterking nodig om door te groeien. Onze interim-professionals zijn direct inzetbaar en brengen frisse energie én resultaatgerichtheid mee.</p>
+              <p>Wij houden van:</p>
+              <ul>
+                <li>Heldere afspraken</li>
+                <li>Snel schakelen</li>
+                <li>Versterking mét visie</li>
+              </ul>
+              <p>Of je nu een tijdelijke schoolleider, projectleider of onderwijskundig adviseur zoekt — KIEM biedt ervaren krachten die bouwen aan continuïteit én verbetering.</p>
+            `
+          },
+          {
+            title: 'Coaching',
+            content: `
+              <p>Met persoonlijke coaching biedt KIEM ruimte voor groei, reflectie en professionele ontwikkeling.</p>
+              <p>Onze coachingstrajecten zijn gericht op:</p>
+              <ul>
+                <li>Leiderschapsontwikkeling</li>
+                <li>Teamcoaching</li>
+                <li>Professionele effectiviteit</li>
+              </ul>
+              <p>We ondersteunen mensen in het onderwijs om met meer plezier, impact en vertrouwen hun werk te doen.</p>
+            `
+          }
+        ]
+      )
+  
+  section.contact-block.interim
+    .container
+      .contact-block__item
+        img(src="/images/content/phone.svg" alt="alt" width="70" height="70")
+        .svg-wrapper
+          +svg("wave-long-left").wave-long
+          +svg("wave-name-left").wave-short
+      .contact-block__title
+        h2
+          | Ontdek wat wij voor
+          span  jouw 
+          span  team 
+          |  kunnen betekenen. 
+        a.contact-block__phone(href="tel:#")
+          | Bel &nbsp;
+          span 020-001 0012
+          | &nbsp; of
+          span
+          | stuur ons een &nbsp;
+          span bericht
+          +svg("arrow-right-bold")
+      .contact-block__item
+        .svg-wrapper
+          +svg("wave-name-right").wave-short
+          +svg("wave-long-right").wave-long
+        img(src="/images/content/email.svg" alt="alt" width="70" height="70")
+  

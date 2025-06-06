@@ -1,0 +1,54 @@
+.page-header {
+  margin-top: 18px;
+  padding: 0;
+
+  @include desktop {
+    margin-top: 100px;
+    padding: 0px 80px;
+  }
+}
+
+.page-header__inner {
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-header__text {
+  max-width: 100%;
+}
+
+.page-header__text h1 {
+  margin-bottom: 20px;
+
+  @include desktop {
+    margin-bottom: 24px;
+  }
+}
+
+.page-header__text p {
+  max-width: 100%;
+
+  @include desktop {
+    width: 77%;
+  }
+}
+
+.page-header__image {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 26px;
+
+
+
+  @include desktop {
+    width: 50%;
+    height: 380px;
+    margin-top: 0;
+  }
+}

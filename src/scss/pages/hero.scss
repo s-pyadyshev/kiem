@@ -1,0 +1,91 @@
+.hero__top {
+  width: 100%;
+  background-color: $color-floralwhite;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+
+  @include tablet {
+    height: 526px;
+    margin-top: 0;
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 58px 40px 190px;
+
+  @include laptop {
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 360px;
+  }
+
+  @include desktop {
+    max-width: 1120px;
+    margin-inline: auto;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 24px;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    a {
+      margin-top: 40px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 14px;
+    letter-spacing: -1.2px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  a {
+    margin-top: 8px;
+  }
+
+
+}
+
+.hero__right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  img {
+    width: 216px;
+    height: 216px;
+
+    @include tablet {
+      width: 324px;
+      height: 324px;
+    }
+
+    @include laptop {
+      width: 432px;
+      height: 432px;
+    }
+
+    @include desktop {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+}
+
+@include visibility-breakpoint(1420);
