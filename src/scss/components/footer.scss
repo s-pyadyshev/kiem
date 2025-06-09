@@ -175,6 +175,30 @@ a.footer__logo {
   }
 }
 
+.footer__info-item a {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: $color-primary;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &.active::after {
+    transform: scaleX(1);
+  }
+}
+
 .footer__info-item div:last-child {
   margin-bottom: 0;
 }
@@ -214,10 +238,21 @@ a.footer__logo {
   a {
     display: inline-block;
     margin: 0;
+    transition: color $transition-duration;
+    color: $color-orange;
+
+    &:after {
+      display: none;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
   }
 
   svg {
-    color: $color-white;
     width: 34px;
     height: 34px;
 

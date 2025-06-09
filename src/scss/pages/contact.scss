@@ -47,14 +47,14 @@
     margin-left: 0;
     margin-right: 10px;
     display: block;
-    color: #ff9841;
+    color: $color-orange;
     width: 13px;
     height: 13px;
   }
 
   span {
     text-decoration: underline;
-    color: #ff9841;
+    color: $color-orange;
   }
 
   @include desktop {

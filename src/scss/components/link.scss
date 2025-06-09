@@ -89,14 +89,19 @@
   font-size: 16px;
   letter-spacing: 0;
 
-  @include desktop {
+  @include laptop {
     font-size: 20px;
   }
 }
 
-.link__more-title:hover {
-  text-decoration: underline;
-  text-decoration-color: $color-orange;
-  text-underline-offset: 0.1em;
-  text-decoration-thickness: 0.15em;
+.link__more-title {
+
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    text-decoration-color: $color-orange;
+    text-underline-offset: 0.1em;
+    text-decoration-thickness: 0.15em;
+  }
 }

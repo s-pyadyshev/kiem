@@ -40,7 +40,7 @@ block content
             `
           },
           {
-            title: 'Onze aanpak',
+            title: 'Aanpak',
             content: `
               <p>Onze aanpak: samen werken aan groei van binnenuit Bij KIEM Onderwijs geloven we dat echte ontwikkeling ontstaat in samenhang. Daarom kijken we naar het geheel: mensen, processen, cultuur en context. Onze aanpak is doordacht, praktisch en altijd afgestemd op de situatie.</p>
               <ol>
@@ -51,7 +51,9 @@ block content
               </ol>
             `
           }
-        ]
+        ],
+        250,
+        254
       )
 
   section.contact-block
@@ -83,9 +85,9 @@ block content
         img(src="images/email.svg" alt="alt" width="70" height="70")
 
 
-  - section
+  section.section-tabs-team
     .container
-      +tabs-team-desk(
+      +tabs-team(
         'Even voorstellen',
         [
           {
@@ -134,47 +136,47 @@ block content
         ]
       )
 
-  - section
-    .container.hidden-desktop
-      +tabs-team-mobile(
-        'Even voorstellen',
-        [
-          {
-            title: 'Madelon Boot',
-            img: 'images/madelon-circle.jpeg',
-            name: 'Madelon',
-            content: `
-              <p>Ik ben Madelon, een energieke leider met een scherpe blik en een groot hart voor onderwijs. Met jarenlange ervaring als schoolleider in diverse contexten, heb ik geleerd hoe je beweging creëert in teams en ruimte maakt voor duurzame ontwikkeling. Ik geloof in onderwijs dat recht doet aan iedere leerling, en dat professionals in hun kracht zet. Onderwijs dat echt werkt, of het nu gaat om een fusie, het ontwikkelen van zomerscholen, of het begeleiden van kwaliteitstrajecten.</p>
-              <p>Wat mij drijft? Samen leren en bouwen aan goed onderwijs voor alle kinderen. Mijn passie voor gelijke kansen zorgt ervoor dat ik altijd op zoek ben naar manieren om barrières te doorbreken en onderwijs toegankelijk te maken voor iedereen, ongeacht achtergrond of omstandigheden. </p>
-              <p>Ik ben een verbinder met een scherp oog voor wat nodig is, en ik breng structuur en overzicht. Tegelijkertijd durf ik te vernieuwen en gebruik ik mijn onderwijskundige achtergrond om praktische oplossingen te bieden. Met daadkracht, positiviteit en humor creëer ik beweging, zelfs als het spannend wordt.</p>
-              <p>Met KIEM Onderwijs werk ik aan toekomstgericht, mensgericht onderwijs. Ik geloof in werken vanuit vertrouwen en met heldere kaders, altijd met oog voor de praktijk. Het vraagt lef, reflectie en samenwerking — en precies dat breng ik mee in elk traject.</p>
-              <div>
-                <a href="tel:06-48224339">
-                  06 - 29 557 606
-                </a>
-                <a href="mailto:madelon@kiem-onderwijs.nl">
-                  madelon@kiem-onderwijs.nl
-                </a>
-              </div>
-            `
-          },
-          {
-            title: 'Manja Dobbe',
-            img: 'images/manja-circle.jpeg',
-            name: 'Manja',
-            content: `
-              <p>Ik ben Manja – mensgericht leider met lef, visie en volle energie. Na jaren als schoolleider en bestuurlijk projectleider weet ik hoe je beweging krijgt in een team én in een organisatie. Ik geloof in onderwijs waarin professionals tot bloei komen en kinderen écht leren – met richting, ruimte en betekenis. Ik werk het liefst in scholen die het verschil willen maken voor hun leerlingen, zeker daar waar de uitdagingen groot zijn.</p>
-              <p>Wat mij drijft? De kracht van verbinding. Ik zie snel waar de energie zit, geef mensen vertrouwen en weet met daadkracht en warmte een professionele cultuur te bouwen. Vanuit ervaring én nieuwsgierigheid combineer ik stevige leiderschapskwaliteiten met oog voor ontwikkeling, zowel in het grote geheel als op individueel niveau. Of het nu gaat om teamcoaching, onderwijskwaliteit of interim-schoolleiderschap: ik werk altijd met hart, hoofd én humor.</p>
-              <p>Met KIEM werk ik aan duurzame groei in onderwijs. Ik geloof in doelgericht werken vanuit wat écht belangrijk is – en in het creëren van de juiste randvoorwaarden om dat waar te maken. Dat vraagt om lef, scherpte en eigenaarschap. Dát is wat ik meebreng in elk traject.</p>
-              <div>
-                <a href="tel:06-29557606">
-                  06 - 29 557 606
-                </a>
-                <a href="mailto:manja@kiem-onderwijs.nl">
-                  manja@kiem-onderwijs.nl
-                </a>
-              </div>
-            `
-          }
-        ]
-      )
+  //- - section
+  //-   .container.hidden-desktop
+  //-     +tabs-team-mobile(
+  //-       'Even voorstellen',
+  //-       [
+  //-         {
+  //-           title: 'Madelon Boot',
+  //-           img: 'images/madelon-circle.jpeg',
+  //-           name: 'Madelon',
+  //-           content: `
+  //-             <p>Ik ben Madelon, een energieke leider met een scherpe blik en een groot hart voor onderwijs. Met jarenlange ervaring als schoolleider in diverse contexten, heb ik geleerd hoe je beweging creëert in teams en ruimte maakt voor duurzame ontwikkeling. Ik geloof in onderwijs dat recht doet aan iedere leerling, en dat professionals in hun kracht zet. Onderwijs dat echt werkt, of het nu gaat om een fusie, het ontwikkelen van zomerscholen, of het begeleiden van kwaliteitstrajecten.</p>
+  //-             <p>Wat mij drijft? Samen leren en bouwen aan goed onderwijs voor alle kinderen. Mijn passie voor gelijke kansen zorgt ervoor dat ik altijd op zoek ben naar manieren om barrières te doorbreken en onderwijs toegankelijk te maken voor iedereen, ongeacht achtergrond of omstandigheden. </p>
+  //-             <p>Ik ben een verbinder met een scherp oog voor wat nodig is, en ik breng structuur en overzicht. Tegelijkertijd durf ik te vernieuwen en gebruik ik mijn onderwijskundige achtergrond om praktische oplossingen te bieden. Met daadkracht, positiviteit en humor creëer ik beweging, zelfs als het spannend wordt.</p>
+  //-             <p>Met KIEM Onderwijs werk ik aan toekomstgericht, mensgericht onderwijs. Ik geloof in werken vanuit vertrouwen en met heldere kaders, altijd met oog voor de praktijk. Het vraagt lef, reflectie en samenwerking — en precies dat breng ik mee in elk traject.</p>
+  //-             <div>
+  //-               <a href="tel:06-48224339">
+  //-                 06 - 29 557 606
+  //-               </a>
+  //-               <a href="mailto:madelon@kiem-onderwijs.nl">
+  //-                 madelon@kiem-onderwijs.nl
+  //-               </a>
+  //-             </div>
+  //-           `
+  //-         },
+  //-         {
+  //-           title: 'Manja Dobbe',
+  //-           img: 'images/manja-circle.jpeg',
+  //-           name: 'Manja',
+  //-           content: `
+  //-             <p>Ik ben Manja – mensgericht leider met lef, visie en volle energie. Na jaren als schoolleider en bestuurlijk projectleider weet ik hoe je beweging krijgt in een team én in een organisatie. Ik geloof in onderwijs waarin professionals tot bloei komen en kinderen écht leren – met richting, ruimte en betekenis. Ik werk het liefst in scholen die het verschil willen maken voor hun leerlingen, zeker daar waar de uitdagingen groot zijn.</p>
+  //-             <p>Wat mij drijft? De kracht van verbinding. Ik zie snel waar de energie zit, geef mensen vertrouwen en weet met daadkracht en warmte een professionele cultuur te bouwen. Vanuit ervaring én nieuwsgierigheid combineer ik stevige leiderschapskwaliteiten met oog voor ontwikkeling, zowel in het grote geheel als op individueel niveau. Of het nu gaat om teamcoaching, onderwijskwaliteit of interim-schoolleiderschap: ik werk altijd met hart, hoofd én humor.</p>
+  //-             <p>Met KIEM werk ik aan duurzame groei in onderwijs. Ik geloof in doelgericht werken vanuit wat écht belangrijk is – en in het creëren van de juiste randvoorwaarden om dat waar te maken. Dat vraagt om lef, scherpte en eigenaarschap. Dát is wat ik meebreng in elk traject.</p>
+  //-             <div>
+  //-               <a href="tel:06-29557606">
+  //-                 06 - 29 557 606
+  //-               </a>
+  //-               <a href="mailto:manja@kiem-onderwijs.nl">
+  //-                 manja@kiem-onderwijs.nl
+  //-               </a>
+  //-             </div>
+  //-           `
+  //-         }
+  //-       ]
+  //-     )

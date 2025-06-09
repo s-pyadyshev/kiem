@@ -29,32 +29,33 @@
     max-width: 1120px;
     margin-inline: auto;
 
-    h1 {
-      margin-bottom: 30px;
-    }
-
-    p {
-      font-size: 24px;
-      margin: 0;
-      line-height: 1.6;
-    }
-
-    a {
-      margin-top: 40px;
-    }
   }
 
   h1 {
     margin-bottom: 14px;
     letter-spacing: -1.2px;
+
+    @include desktop {
+      margin-bottom: 30px;
+    }
   }
 
   p {
     font-size: 16px;
+
+    @include desktop {
+      font-size: 24px;
+      margin: 0;
+      line-height: 1.6;
+    }
   }
 
   a {
     margin-top: 8px;
+
+    @include desktop {
+      margin-top: 40px;
+    }
   }
 
 
@@ -84,8 +85,29 @@
       height: 100%;
     }
   }
+}
 
+.hero__link .link__more-title>span:first-child {
+  display: inline;
+}
 
+.hero__link .link__more-title>span:last-child {
+  display: none;
+}
+
+.hero__link .link__more-title {
+
+  &:focus,
+  &:hover,
+  &:active {
+    &>span:first-child {
+      display: none;
+    }
+
+    &>span:last-child {
+      display: inline;
+    }
+  }
 }
 
 @include visibility-breakpoint(1420);

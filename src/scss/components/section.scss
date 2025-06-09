@@ -47,7 +47,19 @@
 }
 
 .section-info-block {
-  padding-block: 44px;
+  padding-block: 44px 56px;
+
+  @include laptop {
+    padding-block: 88px;
+  }
+
+  @include desktop {
+    padding-block: 100px 114px;
+  }
+}
+
+.section-offer-block {
+  padding: 0 0 62px;
 
   @include laptop {
     padding-block: 88px;

@@ -32,10 +32,6 @@
   flex-direction: column;
   align-items: flex-start;
 
-  .menu-active & {
-    opacity: 0;
-  }
-
   >img:first-child {
     width: 116px;
 

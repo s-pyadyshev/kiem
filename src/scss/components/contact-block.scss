@@ -1,9 +1,16 @@
+.contact-block {
+  padding: 35px 0;
+
+  @include desktop {
+    padding: 54px 0;
+  }
+}
+
 .contact-block .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 215px;
-  margin-top: 35px;
   position: relative;
 
   @media (min-width: 460px) {

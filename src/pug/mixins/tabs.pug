@@ -43,9 +43,9 @@
 //-   button.swiper-button-prev
 //-   button.swiper-button-next
 
-mixin tabs(title, img, tabs)
+mixin tabs(title, img, tabs, width, height)
   .tabs-main
-    img(src=img, alt=title, width="250", height="250").hidden-desktop
+    img(src=img, alt=title, width=width, height=height).hidden-desktop
     h2= title
     +svg("arrow-down-circle")
 
@@ -63,7 +63,7 @@ mixin tabs(title, img, tabs)
 
         .tab-content__centered
           .tab-content__line
-          img(src=img, alt=title, width="250", height="250")
+          img(src=img, alt=title, width=width, height=height)
           .tab-content__line
 
         if tabs[1]
@@ -79,74 +79,36 @@ mixin tabs(title, img, tabs)
             article.article
               != tab.content
 
-mixin tabs-team-desk(title, tabs)
-  .tabs-team.hidden.visible-desktop
+mixin tabs-team(title, tabs)
+  .tabs-team
     .tabs__team-title
       h2= title
       +svg("arrow-down-circle")
 
-    .tabs__team-rectangle
+    .tabs__toggle-rectangle.visible-desktop
 
-    .tabs__team-name.tabs__team-name--left
-      if tabs[0]
-        +svg("wave-name-left")
+    .tabs__team-toggle
+      button.tabs__toggle-img.tabs__toggle-img--left(type="button", data-index="0", aria-expanded="true")
+        img.tab-img(src=tabs[0].img, alt=tabs[0].title, width="360", height="550")
+        img.tab-img-hover(src=tabs[0].imgHover, alt=tabs[0].title, width="360", height="550")
+
+      .tabs__team-name.tabs__team-name--left
+        .svg-wrapper
+          +svg("wave-name-left")
         span= tabs[0].name
 
-    .tabs__team-name.tabs__team-name--right
-      if tabs[1]
+      button.tabs__toggle-img.tabs__toggle-img--right(type="button", data-index="1", aria-expanded="false")
+        img.tab-img(src=tabs[1].img, alt=tabs[1].title, width="360", height="550")
+        img.tab-img-hover(src=tabs[1].imgHover, alt=tabs[1].title, width="360", height="550")
+
+      .tabs__team-name.tabs__team-name--right
         span= tabs[1].name
-        +svg("wave-name-right")
-
+        .svg-wrapper
+          +svg("wave-name-right")
+    
     .tabs__team-container
-      .tabs.hidden-desktop
-        each tab, i in tabs
-          button.tab-button(aria-expanded=i === 0 ? 'true' : 'false')= tab.title
-
-      .tab-content-desktop.visible-desktop.hidden-tablet
-        if tabs[0]
-          .tab-content__item
-            .tab-content__img-wrapper
-              img.tab-img(src=tabs[0].img, alt=tabs[0].title, width="360", height="550")
-              img.tab-img-hover(src=tabs[0].imgHover, alt=tabs[0].title, width="360", height="550")
-            .tab-content__text
-              h3= tabs[0].title
-              article.article
-                != tabs[0].content
-
-        if tabs[1]
-          .tab-content__item
-            .tab-content__img-wrapper
-              img.tab-img(src=tabs[1].img, alt=tabs[1].title, width="360", height="550")
-              img.tab-img-hover(src=tabs[1].imgHover, alt=tabs[1].title, width="360", height="550")
-            .tab-content__text
-              h3= tabs[1].title
-              article.article
-                != tabs[1].content
-
-      .tab-content-laptop.hidden-desktop
-        each tab, i in tabs
-          .tab-content__item(aria-expanded=i === 1 ? 'true' : 'false')
-            h3= tab.title
-            article.article
-              != tab.content
-
-mixin tabs-team-mobile(title, tabs)
-  .tabs-team-momile
-    .team-mobile__title
-      h2= title
-      +svg("arrow-down-circle")
-
-    .team-mobile__container
-      .team-mobile__toggle
-        each tab, i in tabs
-          button.team-toggle__item(type="button", data-index=i aria-expanded=i === 0 ? 'true' : 'false')
-            img(src=tab.img, alt=tab.title, width="300", height="300")
-            .svg-wrapper
-              +svg("wave-name-right")
-            span= tab.name
-
       each tab, i in tabs
-        .team-mobile__text(aria-expanded=i === 0 ? 'true' : 'false')
+        .tab-content__text(data-tab=i, aria-expanded=i === 0 ? 'true' : 'false')
           h3= tab.title
-          article
+          article.article
             != tab.content

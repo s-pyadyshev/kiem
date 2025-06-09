@@ -29,7 +29,7 @@ block content
             |  naar jouw school
           p Elke school heeft groeikracht. Soms is die kracht al volop zichtbaar, soms ligt er nog groeipotentieel te wachten. Met begeleiding vanuit KIEM zorg je ervoor dat de bouwstenen voor groeikracht stevig verankerd zijn: Kennis, Inspirerend leiderschap, Effectieve organisatie en Meesterschap. Samen vormen deze bouwstenen de basis voor duurzaam, toekomstgericht onderwijs waarin leerlingen én professionals floreren.
           p Of je nu één bouwsteen wilt versterken of gericht aan meerdere gebieden wilt werken, bij KIEM kies je wat jouw school nodig heeft om verder te groeien. Je kunt gericht werken aan één bouwsteen, meerdere tegelijk, of stap voor stap toewerken naar een complete school met groeikracht.
-        .section-growth__accordion
+        ul.section-growth__accordion
           +accordion('Wat is een KIEM-school?', `
             <ul>
               <li>Actuele kennis en vakmanschap vergroten middels studiedagen en trainingen.</li>
@@ -68,7 +68,7 @@ block content
               article.growth-tabs__content-open
                 p Versterk je fundament. Groei begint bij wat je weet én wat je ermee doet. Sterk onderwijs vraagt om actuele vakkennis en didactische vaardigheden.
                 p Met KIEM vergroot je de expertise binnen jouw team en leg je een stevige basis voor betere resultaten. Wij maken leren praktisch: direct toepasbaar in de klas, met concrete handvatten.
-                p.break-column Wat we bieden:
+                p Wat we bieden:
                 ul 
                   li Versterking basisvaardigheden: taal, rekenen, burgerschap
                   li Formatief handelen in de praktijk
@@ -97,7 +97,7 @@ block content
               article.growth-tabs__content-open
                 p Maak van ambitie een beweging. Groei door krachtig en verbindend leiderschap. Goed leiderschap maakt het verschil tussen plannen en echte verandering.
                 p Bij KIEM ondersteunen we schoolleiders en teamcoördinatoren om richting te geven, te inspireren en te bouwen aan professionele culturen waarin mensen willen groeien.
-                p.break-column Wat we bieden:
+                p Wat we bieden:
                 ul 
                   li Visietrajecten: samen koers bepalen en uitdragen
                   li Begeleiding in coachend leiderschap en feedback geven
@@ -125,7 +125,7 @@ block content
               article.growth-tabs__content-open
                 p Versterk je fundament. Groei begint bij wat je weet én wat je ermee doet. Sterk onderwijs vraagt om actuele vakkennis en didactische vaardigheden.
                 p Met KIEM vergroot je de expertise binnen jouw team en leg je een stevige basis voor betere resultaten. Wij maken leren praktisch: direct toepasbaar in de klas, met concrete handvatten.
-                p.break-column Wat we bieden:
+                p Wat we bieden:
                 ul 
                   li Versterking basisvaardigheden: taal, rekenen, burgerschap
                   li Formatief handelen in de praktijk
@@ -154,7 +154,7 @@ block content
               article.growth-tabs__content-open
                 p Versterk je fundament. Groei begint bij wat je weet én wat je ermee doet. Sterk onderwijs vraagt om actuele vakkennis en didactische vaardigheden.
                 p Met KIEM vergroot je de expertise binnen jouw team en leg je een stevige basis voor betere resultaten. Wij maken leren praktisch: direct toepasbaar in de klas, met concrete handvatten.
-                p.break-column Wat we bieden:
+                p Wat we bieden:
                 ul 
                   li Versterking basisvaardigheden: taal, rekenen, burgerschap
                   li Formatief handelen in de praktijk
@@ -256,50 +256,31 @@ block content
                 span.link__more-title Plan een kennismaking
                 +svg("arrow-right-bold")
 
-        .contact-block.hidden.visible-desktop.growth
-          .container
-            .contact-block__item
-              img(src="images/phone.svg" alt="alt" width="70" height="70")
-              .svg-wrapper
-                +svg("wave-long-left").wave-long
-                +svg("wave-name-left").wave-short
-            .contact-block__title
-              h2 Benieuwd waar jouw school staat?  
-              a.contact-block__phone(href="tel:#")
-                | Bel &nbsp;
-                span 020-001 0012
-                | &nbsp; of
-                span
-                | stuur ons een &nbsp;
-                span bericht
-                +svg("arrow-right-bold")
-            .contact-block__item
-              .svg-wrapper
-                +svg("wave-name-right").wave-short
-                +svg("wave-long-right").wave-long
-              img(src="images/email.svg" alt="alt" width="70" height="70")
-      
-      .contact-block.hidden-desktop.growth
-          .container
-            .contact-block__item
-              img(src="images/phone.svg" alt="alt" width="70" height="70")
-              .svg-wrapper
-                +svg("wave-long-left").wave-long
-                +svg("wave-name-left").wave-short
-            .contact-block__title
-              h2 Benieuwd waar jouw school staat?  
-              a.contact-block__phone(href="tel:#")
-                | Bel &nbsp;
-                span 020-001 0012
-                | &nbsp; of
-                span
-                | stuur ons een &nbsp;
-                span bericht
-                +svg("arrow-right-bold")
-            .contact-block__item
-              .svg-wrapper
-                +svg("wave-name-right").wave-short
-                +svg("wave-long-right").wave-long
-              img(src="images/content/email.svg" alt="alt" width="70" height="70")
+  section.contact-block.interim
+    .container
+      .contact-block__item
+        img(src="images/phone.svg" alt="alt" width="70" height="70")
+        .svg-wrapper
+          +svg("wave-long-left").wave-long
+          +svg("wave-name-left").wave-short
+      .contact-block__title
+        h2
+          | Ontdek wat wij voor
+          span  jouw 
+          span  team 
+          |  kunnen betekenen. 
+        a.contact-block__phone(href="tel:#")
+          | Bel &nbsp;
+          span 020-001 0012
+          | &nbsp; of
+          span
+          | stuur ons een &nbsp;
+          span bericht
+          +svg("arrow-right-bold")
+      .contact-block__item
+        .svg-wrapper
+          +svg("wave-name-right").wave-short
+          +svg("wave-long-right").wave-long
+        img(src="images/email.svg" alt="alt" width="70" height="70")
             
 
