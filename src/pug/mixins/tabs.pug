@@ -54,38 +54,50 @@ mixin tabs(title, img, tabs, width, height)
         each tab, i in tabs
           button.tab-button(aria-expanded=i === 0 ? 'true' : 'false')= tab.title
 
-      .tab-content-desktop.visible-desktop.hidden-tablet
+      //- .tab-content-desktop.visible-desktop.hidden-tablet
+      //-   if tabs[0]
+      //-     .tab-content__item
+      //-       h3= tabs[0].title
+      //-       article.article
+      //-         != tabs[0].content
+
+      //-   .tab-content__centered
+      //-     .tab-content__line
+      //-     img(src=img, alt=title, width=width, height=height)
+      //-     .tab-content__line
+
+      //-   if tabs[1]
+      //-     .tab-content__item
+      //-       h3= tabs[1].title
+      //-       article.article
+      //-         != tabs[1].content
+      .tab-content-laptop
         if tabs[0]
-          .tab-content__item
+          .tab-content__item(aria-expanded=i === 1 ? 'true' : 'false')
             h3= tabs[0].title
             article.article
               != tabs[0].content
-
         .tab-content__centered
           .tab-content__line
           img(src=img, alt=title, width=width, height=height)
           .tab-content__line
 
         if tabs[1]
-          .tab-content__item
+          .tab-content__item(aria-expanded=i === 1 ? 'true' : 'false')
             h3= tabs[1].title
             article.article
               != tabs[1].content
-
-      .tab-content-laptop.hidden-desktop
-        each tab, i in tabs
-          .tab-content__item(aria-expanded=i === 1 ? 'true' : 'false')
-            h3= tab.title
-            article.article
-              != tab.content
+        //- each tab, i in tabs
+        //-   .tab-content__item(aria-expanded=i === 1 ? 'true' : 'false')
+        //-     h3= tab.title
+        //-     article.article
+        //-       != tab.content
 
 mixin tabs-team(title, tabs)
   .tabs-team
     .tabs__team-title
       h2= title
       +svg("arrow-down-circle")
-
-    .tabs__toggle-rectangle.visible-desktop
 
     .tabs__team-toggle
       button.tabs__toggle-img.tabs__toggle-img--left(type="button", data-index="0", aria-expanded="true")

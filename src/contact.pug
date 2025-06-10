@@ -7,9 +7,9 @@ append vars
  - pageWrapperClass = 'gradient-md-top-left'
 
 block content
-  section.page-header.contact
-    .page-header__inner.container.container-md
-      .page-header__text
+  section.contact
+    .contact__inner.container.container-sm
+      .contact__text
         h1
             | Samen 
             span verder
@@ -20,7 +20,7 @@ block content
             +svg("arrow-right-bold")
             | Of bel ons op &nbsp;
             span 020-001 0012
-      form.page-header__form
+      form.contact__form
         .form-group
           label(for="name").label  Voor- en achternaam
           input#name.input(type="text" name="name" placeholder="Voor- en achternaam")

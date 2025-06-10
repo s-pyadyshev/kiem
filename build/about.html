@@ -16,12 +16,12 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="KEIM" />
 <link rel="manifest" href="/site.webmanifest" />
-		<link rel="stylesheet" href="./css/main.css?v=1749457604973">
+		<link rel="stylesheet" href="./css/main.css?v=1749543864243">
 	</head>
 	<body>
 		<div class="page-wrapper gradient-md-top-right">
 			<header class="header">
-				<div class="container container-sm">
+				<div class="container">
 					<div class="header__inner">
 						<div class="header__inner-wrap"><a class="header__logo" href="/"><img src="images/logo-kiem.svg" alt="logo KIEM." width="135" height="39"><img src="images/logo-kiem-text.svg" alt="Groei in onderwijs." width="188" height="20"></a></div>
 						<div class="header__menu">
@@ -64,8 +64,8 @@
 									<button class="tab-button" aria-expanded="true">Visie</button>
 									<button class="tab-button" aria-expanded="false">Aanpak</button>
 								</div>
-								<div class="tab-content-desktop visible-desktop hidden-tablet">
-									<div class="tab-content__item">
+								<div class="tab-content-laptop">
+									<div class="tab-content__item" aria-expanded="false">
 										<h3>Visie</h3>
 										<article class="article">
               <p>Bij KIEM Onderwijs geloven we dat elk kind recht heeft op een sterke school. Een plek waar krachtige leerkrachten, inspirerend leiderschap en betrokken leerlingen samen bouwen aan een stevige basis en een kansrijke toekomst.</p>
@@ -85,38 +85,7 @@
 										<div class="tab-content__line"></div><img src="images/accordion-image-1.svg" alt="Voor groei en gelijke kansen" width="250" height="254"/>
 										<div class="tab-content__line"></div>
 									</div>
-									<div class="tab-content__item">
-										<h3>Aanpak</h3>
-										<article class="article">
-              <p>Onze aanpak: samen werken aan groei van binnenuit Bij KIEM Onderwijs geloven we dat echte ontwikkeling ontstaat in samenhang. Daarom kijken we naar het geheel: mensen, processen, cultuur en context. Onze aanpak is doordacht, praktisch en altijd afgestemd op de situatie.</p>
-              <ol>
-                <li><b>We starten samen met het maken van een scherpe analyse</b><p>We verbinden de benodigde elementen uit visie, leiderschap, teamontwikkeling en onderwijskwaliteit tot één helder groeipad.</p></li>
-                <li><b>We vergroten vakmanschap</b><p>We begeleiden leerkrachten in kennis, vaardigheden en eigenaarschap. Met focus op basisvaardigheden én betekenisvol, rijk onderwijs voor alle leerlingen.</p></li>
-                <li><b>We leren samen</b><p>Ontwikkeling gebeurt in het dagelijks werk. Via trainingen, studiedagen, coaching en begeleiding op maat bouwen we aan een lerende organisatie.</p></li>
-                <li><b>We bouwen duurzaam</b><p>Geen losse interventies, maar blijvende ontwikkeling. Samen leggen we stevige wortels voor toekomstgericht onderwijs en gelijke kansen.</p></li>
-              </ol>
-            
-										</article>
-									</div>
-								</div>
-								<div class="tab-content-laptop hidden-desktop">
 									<div class="tab-content__item" aria-expanded="false">
-										<h3>Visie</h3>
-										<article class="article">
-              <p>Bij KIEM Onderwijs geloven we dat elk kind recht heeft op een sterke school. Een plek waar krachtige leerkrachten, inspirerend leiderschap en betrokken leerlingen samen bouwen aan een stevige basis en een kansrijke toekomst.</p>
-              <p>Wij kijken naar het geheel: echte groei ontstaat als alle schakels in de schoolorganisatie bijdragen. Daar ontstaat energie, eigenaarschap en kwaliteit. </p>
-              <p>Onze focus ligt op scholen met complexe uitdagingen, waar goed onderwijs het verschil maakt. Door te investeren in mensen, structuur en vakmanschap, creëren we ruimte voor ambitie en kansengelijkheid.</p>
-              <p>We versterken scholen van binnenuit, met oog voor: </p>
-              <ul>
-                <li><span>Krachtige leerkrachten</span> die groeien in kennis, vaardigheden en eigenaarschap.</li>
-                <li><span>Inspirerend leiderschap</span> dat richting geeft en ruimte schept.</li>
-                <li><span>Betrokken leerlingen</span> die profiteren van een stevige basis en rijk onderwijs.</li>
-              </ul>
-              <p>KIEM werkt aan toekomstgericht onderwijs waarin ieder kind kan bloeien.</p>
-            
-										</article>
-									</div>
-									<div class="tab-content__item" aria-expanded="true">
 										<h3>Aanpak</h3>
 										<article class="article">
               <p>Onze aanpak: samen werken aan groei van binnenuit Bij KIEM Onderwijs geloven we dat echte ontwikkeling ontstaat in samenhang. Daarom kijken we naar het geheel: mensen, processen, cultuur en context. Onze aanpak is doordacht, praktisch en altijd afgestemd op de situatie.</p>
@@ -135,8 +104,8 @@
 					</div>
 				</section>
 				<section class="contact-block">
-					<div class="container">
-						<div class="contact-block__item"><img src="images/phone.svg" alt="alt" width="70" height="70">
+					<div class="contact-block__inner">
+						<div class="contact-block__item"><img src="images/phone.svg" alt="70" height="70">
 							<div class="svg-wrapper">
 								<svg class="wave-long">
 									<use xlink:href="./images/sprites.svg#wave-long-left"></use>
@@ -162,7 +131,7 @@
 								<svg class="wave-long">
 									<use xlink:href="./images/sprites.svg#wave-long-right"></use>
 								</svg>
-							</div><img src="images/email.svg" alt="alt" width="70" height="70">
+							</div><img src="images/email.svg" alt="email." width="70" height="70">
 						</div>
 					</div>
 				</section>
@@ -175,7 +144,6 @@
 									<use xlink:href="./images/sprites.svg#arrow-down-circle"></use>
 								</svg>
 							</div>
-							<div class="tabs__toggle-rectangle visible-desktop"></div>
 							<div class="tabs__team-toggle">
 								<button class="tabs__toggle-img tabs__toggle-img--left" type="button" data-index="0" aria-expanded="true"><img class="tab-img" src="images/madelon.jpeg" alt="Madelon Boot" width="360" height="550"/><img class="tab-img-hover" src="images/madelon-hover.jpeg" alt="Madelon Boot" width="360" height="550"/></button>
 								<div class="tabs__team-name tabs__team-name--left">
@@ -205,11 +173,11 @@
               <div>
                 <a href="tel:06-48224339">
                   <img src="images/phone.svg" alt="06-48224339" width="13" height="13" />
-                  06 - 29 557 606
+                  <span>06 - 29 557 606</span>
                 </a>
                 <a href="mailto:madelon@kiem-onderwijs.nl">
                   <img src="images/email.svg" alt="madelon@kiem-onderwijs.nl" width="13" height="13" />
-                  madelon@kiem-onderwijs.nl
+                  <span>madelon@kiem-onderwijs.nl</span>
                 </a>
               </div>
             
@@ -283,7 +251,7 @@
 				</div>
 			</footer>
 		</div><script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-		<script src="./js/vendor.js?v=1749457604974"></script>
-		<script src="./js/main.js?v=1749457604974"></script>
+		<script src="./js/vendor.js?v=1749543864244"></script>
+		<script src="./js/main.js?v=1749543864244"></script>
 	</body>
 </html>

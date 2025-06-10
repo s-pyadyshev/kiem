@@ -1,9 +1,6 @@
 .contact-block.interim {
-  margin-top: 70px;
-  margin-bottom: 70px;
-
-  @include desktop {
-    margin-top: 100px;
-    margin-bottom: 109px;
-  }
+    @include desktop {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }

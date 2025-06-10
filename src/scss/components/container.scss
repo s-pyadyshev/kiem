@@ -19,6 +19,12 @@
   }
 }
 
+.container-sm {
+  @include desktop-l {
+    padding-inline: 320px;
+  }
+}
+
 .container--fluid {
   max-width: 100%;
 }

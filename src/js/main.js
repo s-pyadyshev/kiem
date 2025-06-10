@@ -4,6 +4,7 @@ import { tabs } from './components/tabs.js';
 import { growthTabs } from './growth-tabs.js';
 import { teamTabsMobile } from './team-tabs-mobile.js';
 import { growthTabsMobile } from './growth-tabs-mobile.js';
+
 window.addEventListener(
 	'load',
 	() => {

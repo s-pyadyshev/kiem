@@ -79,10 +79,6 @@
   @include laptop {
     padding: 50px 120px 120px 120px;
   }
-
-  @include desktop {
-    margin-bottom: 160px;
-  }
 }
 
 .section-growth__text {
@@ -276,7 +272,10 @@
 }
 
 .growth-tabs__link-open {
-  margin-top: 80px;
+  @include desktop {
+    position: absolute;
+    bottom: 35px;
+  }
 }
 
 .growth-tabs__item.is-open .growth-tabs__item-open {
@@ -508,7 +507,7 @@
   @include tablet {
     padding-left: 40px;
     text-indent: 0 !important;
-    margin-left: 10px;
+    margin-left: 30px;
   }
 }
 
