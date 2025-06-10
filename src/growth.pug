@@ -47,148 +47,53 @@ block content
             </ul>
           `)
 
-        h2.section-growth__tabs-title.hidden.visible-desktop De bouwstenen
-        h2.section-growth__tabs-title.hidden-desktop Druk op een letter
-        .section-growth__tabs-desktop.hidden.visible-desktop
-          // 1
-          .growth-tabs__item
-            .growth-tabs__item-close
-              +svg("tabs-circle-1").growth-tabs__icon
-              p.growth-tabs__title-close 
+        .growth__tabs
+          h2.section-growth__tabs-title.hidden.visible-desktop De bouwstenen  
+          h2.section-growth__tabs-title.hidden-desktop Druk op een letter
+          .growth__tabs-nav
+            .growth__nav-item
+              +svg("tabs-circle-1").growth__nav-circle
+              .growth-toggle__triangle.hidden-desktop
+              p.growth__nav-title.hidden.visible-desktop
                 | Groeien in
                 br
                 span  kennis
-              p.growth-tabs__subtitle-close Workshops, trainingen en verdieping in basisvaardigheden, EDI en formatief handelen
-              +svg("arrow-right").growth-tabs__arrow-close
-            .growth-tabs__item-open
-              h3.growth-tabs__title-open 
-                | Groeien in
-                span  kennis
-              p.growth-tabs__subtitle-open Workshops, trainingen en verdieping in basisvaardigheden, EDI en formatief handelen.
-              article.growth-tabs__content-open
-                p Versterk je fundament. Groei begint bij wat je weet én wat je ermee doet. Sterk onderwijs vraagt om actuele vakkennis en didactische vaardigheden.
-                p Met KIEM vergroot je de expertise binnen jouw team en leg je een stevige basis voor betere resultaten. Wij maken leren praktisch: direct toepasbaar in de klas, met concrete handvatten.
-                p Wat we bieden:
-                ul 
-                  li Versterking basisvaardigheden: taal, rekenen, burgerschap
-                  li Formatief handelen in de praktijk
-                  li Effectief inzetten van EDI (Expliciete Directe Instructie)
-                  li Training op leerlijnen en referentieniveaus
-                span Ontdek wat jouw team vandaag al kan leren!
-              a.link__more.growth-tabs__link-open(href="#")
-                span.link__more-title Plan een kennismaking
-                +svg("arrow-right-bold")
-              +svg("arrow-left").growth-tabs__arrow-open
-          // 2
-          .growth-tabs__item
-            .growth-tabs__item-close
-              +svg("tabs-circle-2").growth-tabs__icon
-              p.growth-tabs__title-close 
+              p.growth__nav-subtitle.hidden.visible-desktop Workshops, trainingen en verdieping in basisvaardigheden, EDI en formatief handelen
+              +svg("arrow-right").growth__nav-arrow.hidden.visible-desktop
+            .growth__nav-item
+              +svg("tabs-circle-2").growth__nav-circle
+              .growth-toggle__triangle.hidden-desktop
+              p.growth__nav-title.hidden.visible-desktop
                 | Groeien in
                 br
                 span inspirerend leiderschap
-              p.growth-tabs__subtitle-close Visietrajecten en leiderschapsontwikkeling voor schoolleiders en teams
-              +svg("arrow-right").growth-tabs__arrow-close
-            .growth-tabs__item-open
-              h3.growth-tabs__title-open 
-                | Groeien in
-                span  inspirerend leiderschap
-              p.growth-tabs__subtitle-open Visietrajecten en leiderschapsontwikkeling voor schoolleiders en teams
-              article.growth-tabs__content-open
-                p Maak van ambitie een beweging. Groei door krachtig en verbindend leiderschap. Goed leiderschap maakt het verschil tussen plannen en echte verandering.
-                p Bij KIEM ondersteunen we schoolleiders en teamcoördinatoren om richting te geven, te inspireren en te bouwen aan professionele culturen waarin mensen willen groeien.
-                p Wat we bieden:
-                ul 
-                  li Visietrajecten: samen koers bepalen en uitdragen
-                  li Begeleiding in coachend leiderschap en feedback geven
-                  li Coaching bij rolontwikkeling als leidinggevende
-                span Samen maken we leiderschap zichtbaar en voelbaar binnen jouw organisatie.
-              a.link__more.growth-tabs__link-open(href="#")
-                span.link__more-title Plan een kennismaking
-                +svg("arrow-right-bold")
-              +svg("arrow-left").growth-tabs__arrow-open
-          // 3
-          .growth-tabs__item
-            .growth-tabs__item-close
-              +svg("tabs-circle-3").growth-tabs__icon
-              p.growth-tabs__title-close 
+              p.growth__nav-subtitle.hidden.visible-desktop Visietrajecten en leiderschapsontwikkeling voor schoolleiders en teams
+              +svg("arrow-right").growth__nav-arrow.hidden.visible-desktop
+            .growth__nav-item
+              +svg("tabs-circle-3").growth__nav-circle
+              .growth-toggle__triangle.hidden-desktop
+              p.growth__nav-title.hidden.visible-desktop
                 | Groeien in
                 br
                 span efficiëntie
-              p.growth-tabs__subtitle-close Coaching voor startende schoolleiders en ondersteuning bij organisatiestructuren
-              +svg("arrow-right").growth-tabs__arrow-close
-            .growth-tabs__item-open
-              h3.growth-tabs__title-open 
-                | Groeien in
-                span  kennis
-              p.growth-tabs__subtitle-open Workshops, trainingen en verdieping in basisvaardigheden, EDI en formatief handelen.
-              article.growth-tabs__content-open
-                p Versterk je fundament. Groei begint bij wat je weet én wat je ermee doet. Sterk onderwijs vraagt om actuele vakkennis en didactische vaardigheden.
-                p Met KIEM vergroot je de expertise binnen jouw team en leg je een stevige basis voor betere resultaten. Wij maken leren praktisch: direct toepasbaar in de klas, met concrete handvatten.
-                p Wat we bieden:
-                ul 
-                  li Versterking basisvaardigheden: taal, rekenen, burgerschap
-                  li Formatief handelen in de praktijk
-                  li Effectief inzetten van EDI (Expliciete Directe Instructie)
-                  li Training op leerlijnen en referentieniveaus
-                span Ontdek wat jouw team vandaag al kan leren!
-              a.link__more.growth-tabs__link-open(href="#")
-                span.link__more-title Plan een kennismaking
-                +svg("arrow-right-bold")
-              +svg("arrow-left").growth-tabs__arrow-open
-          // 4
-          .growth-tabs__item
-            .growth-tabs__item-close
-              +svg("tabs-circle-4").growth-tabs__icon
-              p.growth-tabs__title-close 
+              p.growth__nav-subtitle.hidden.visible-desktop Workshops, trainingen en verdieping in basisvaardigheden, EDI en formatief handelen.
+              +svg("arrow-right").growth__nav-arrow.hidden.visible-desktop
+            .growth__nav-item
+              +svg("tabs-circle-4").growth__nav-circle
+              .growth-toggle__triangle.hidden-desktop
+              p.growth__nav-title.hidden.visible-desktop
                 | Groeien in
                 br
                 span meesterschap
-              p.growth-tabs__subtitle-close Vaardigheidstrainingen op het gebied van pedagogisch klimaat en veilig schoolklimaat
-              +svg("arrow-right").growth-tabs__arrow-close
-            .growth-tabs__item-open
-              h3.growth-tabs__title-open 
-                | Groeien in 
-                span  kennis
-              p.growth-tabs__subtitle-open Workshops, trainingen en verdieping in basisvaardigheden, EDI en formatief handelen.
-              article.growth-tabs__content-open
-                p Versterk je fundament. Groei begint bij wat je weet én wat je ermee doet. Sterk onderwijs vraagt om actuele vakkennis en didactische vaardigheden.
-                p Met KIEM vergroot je de expertise binnen jouw team en leg je een stevige basis voor betere resultaten. Wij maken leren praktisch: direct toepasbaar in de klas, met concrete handvatten.
-                p Wat we bieden:
-                ul 
-                  li Versterking basisvaardigheden: taal, rekenen, burgerschap
-                  li Formatief handelen in de praktijk
-                  li Effectief inzetten van EDI (Expliciete Directe Instructie)
-                  li Training op leerlijnen en referentieniveaus
-                span Ontdek wat jouw team vandaag al kan leren!
-              a.link__more.growth-tabs__link-open(href="#")
-                span.link__more-title Plan een kennismaking
-                +svg("arrow-right-bold")
-              +svg("arrow-left").growth-tabs__arrow-open
-          
-
-        .section-growth__tabs-mobile.hidden-desktop
-          .growth-tabs__toggle
-            .growth-toggle__item
-              +svg("tabs-circle-1")
-              .growth-toggle__triangle
-            .growth-toggle__item
-              +svg("tabs-circle-2")
-              .growth-toggle__triangle
-            .growth-toggle__item
-              +svg("tabs-circle-3")
-              .growth-toggle__triangle
-            .growth-toggle__item
-              +svg("tabs-circle-4")
-              .growth-toggle__triangle 
-          .growth-tabs__content
-            //1
-            .growth-tabs__text
-              h3.growth-tabs__title-open 
+              p.growth__nav-subtitle.hidden.visible-desktop Vaardigheidstrainingen op het gebied van pedagogisch klimaat en veilig schoolklimaat
+              +svg("arrow-right").growth__nav-arrow.hidden.visible-desktop
+          .growth__tabs-content
+            .growth__content-item
+              h3.growth__content-title
                 | Groeien in
                 span  kennis
-              p.growth-tabs__subtitle-open Workshops, trainingen en verdieping in basisvaardigheden, EDI en formatief handelen.
-              article.growth-tabs__content-open
+              p.growth__content-subtitle Workshops, trainingen en verdieping in basisvaardigheden, EDI en formatief handelen.
+              article.growth__content-article
                 p Versterk je fundament. Groei begint bij wat je weet én wat je ermee doet. Sterk onderwijs vraagt om actuele vakkennis en didactische vaardigheden.
                 p Met KIEM vergroot je de expertise binnen jouw team en leg je een stevige basis voor betere resultaten. Wij maken leren praktisch: direct toepasbaar in de klas, met concrete handvatten.
                 p Wat we bieden:
@@ -198,16 +103,16 @@ block content
                   li Effectief inzetten van EDI (Expliciete Directe Instructie)
                   li Training op leerlijnen en referentieniveaus
                 span Ontdek wat jouw team vandaag al kan leren!
-              a.link__more.growth-tabs__link-open(href="#")
+              a.link__more.growth__content-link(href="#")
                 span.link__more-title Plan een kennismaking
                 +svg("arrow-right-bold")
-            //2
-            .growth-tabs__text
-              h3.growth-tabs__title-open 
+              +svg("arrow-left").growth__content-arrow.hidden.visible-desktop
+            .growth__content-item
+              h3.growth__content-title
                 | Groeien in
                 span  inspirerend leiderschap
-              p.growth-tabs__subtitle-open Visietrajecten en leiderschapsontwikkeling voor schoolleiders en teams
-              article.growth-tabs__content-open
+              p.growth__content-subtitle Visietrajecten en leiderschapsontwikkeling voor schoolleiders en teams
+              article.growth__content-article
                 p Maak van ambitie een beweging. Groei door krachtig en verbindend leiderschap. Goed leiderschap maakt het verschil tussen plannen en echte verandering.
                 p Bij KIEM ondersteunen we schoolleiders en teamcoördinatoren om richting te geven, te inspireren en te bouwen aan professionele culturen waarin mensen willen groeien.
                 p Wat we bieden:
@@ -216,45 +121,49 @@ block content
                   li Begeleiding in coachend leiderschap en feedback geven
                   li Coaching bij rolontwikkeling als leidinggevende
                 span Samen maken we leiderschap zichtbaar en voelbaar binnen jouw organisatie.
-              a.link__more.growth-tabs__link-open(href="#")
+              a.link__more.growth__content-link(href="#")
                 span.link__more-title Plan een kennismaking
                 +svg("arrow-right-bold")
-            //3
-            .growth-tabs__text
-              h3.growth-tabs__title-open 
+              +svg("arrow-left").growth__content-arrow.hidden.visible-desktop
+            .growth__content-item
+              h3.growth__content-title
                 | Groeien in
-                span  efficiëntie
-              p.growth-tabs__subtitle-open Visietrajecten en leiderschapsontwikkeling voor schoolleiders en teams
-              article.growth-tabs__content-open
-                p Maak van ambitie een beweging. Groei door krachtig en verbindend leiderschap. Goed leiderschap maakt het verschil tussen plannen en echte verandering.
-                p Bij KIEM ondersteunen we schoolleiders en teamcoördinatoren om richting te geven, te inspireren en te bouwen aan professionele culturen waarin mensen willen groeien.
+                span  kennis
+              p.growth__content-subtitle Workshops, trainingen en verdieping in basisvaardigheden, EDI en formatief handelen.
+              article.growth__content-article
+                p Versterk je fundament. Groei begint bij wat je weet én wat je ermee doet. Sterk onderwijs vraagt om actuele vakkennis en didactische vaardigheden.
+                p Met KIEM vergroot je de expertise binnen jouw team en leg je een stevige basis voor betere resultaten. Wij maken leren praktisch: direct toepasbaar in de klas, met concrete handvatten.
                 p Wat we bieden:
                 ul 
-                  li Visietrajecten: samen koers bepalen en uitdragen
-                  li Begeleiding in coachend leiderschap en feedback geven
-                  li Coaching bij rolontwikkeling als leidinggevende
-                span Samen maken we leiderschap zichtbaar en voelbaar binnen jouw organisatie.
-              a.link__more.growth-tabs__link-open(href="#")
+                  li Versterking basisvaardigheden: taal, rekenen, burgerschap
+                  li Formatief handelen in de praktijk
+                  li Effectief inzetten van EDI (Expliciete Directe Instructie)
+                  li Training op leerlijnen en referentieniveaus
+                span Ontdek wat jouw team vandaag al kan leren!
+              a.link__more.growth__content-link(href="#")
                 span.link__more-title Plan een kennismaking
                 +svg("arrow-right-bold")
-            //4
-            .growth-tabs__text
-              h3.growth-tabs__title-open 
+              +svg("arrow-left").growth__content-arrow.hidden.visible-desktop
+            .growth__content-item
+              h3.growth__content-title
                 | Groeien in
-                span  efficiëntie
-              p.growth-tabs__subtitle-open Visietrajecten en leiderschapsontwikkeling voor schoolleiders en teams
-              article.growth-tabs__content-open
-                p Maak van ambitie een beweging. Groei door krachtig en verbindend leiderschap. Goed leiderschap maakt het verschil tussen plannen en echte verandering.
-                p Bij KIEM ondersteunen we schoolleiders en teamcoördinatoren om richting te geven, te inspireren en te bouwen aan professionele culturen waarin mensen willen groeien.
+                span  kennis
+              p.growth__content-subtitle Workshops, trainingen en verdieping in basisvaardigheden, EDI en formatief handelen.
+              article.growth__content-article
+                p Versterk je fundament. Groei begint bij wat je weet én wat je ermee doet. Sterk onderwijs vraagt om actuele vakkennis en didactische vaardigheden.
+                p Met KIEM vergroot je de expertise binnen jouw team en leg je een stevige basis voor betere resultaten. Wij maken leren praktisch: direct toepasbaar in de klas, met concrete handvatten.
                 p Wat we bieden:
                 ul 
-                  li Visietrajecten: samen koers bepalen en uitdragen
-                  li Begeleiding in coachend leiderschap en feedback geven
-                  li Coaching bij rolontwikkeling als leidinggevende
-                span Samen maken we leiderschap zichtbaar en voelbaar binnen jouw organisatie.
-              a.link__more.growth-tabs__link-open(href="#")
+                  li Versterking basisvaardigheden: taal, rekenen, burgerschap
+                  li Formatief handelen in de praktijk
+                  li Effectief inzetten van EDI (Expliciete Directe Instructie)
+                  li Training op leerlijnen en referentieniveaus
+                span Ontdek wat jouw team vandaag al kan leren!
+              a.link__more.growth__content-link(href="#")
                 span.link__more-title Plan een kennismaking
                 +svg("arrow-right-bold")
+              +svg("arrow-left").growth__content-arrow.hidden.visible-desktop
+
   section.contact-block.contact-block--growth
     .contact-block__inner
       .contact-block__item
@@ -277,5 +186,5 @@ block content
           +svg("wave-name-right").wave-short
           +svg("wave-long-right").wave-long
         img(src="images/email.svg" alt="email." width="70" height="70")
-
+            
 
