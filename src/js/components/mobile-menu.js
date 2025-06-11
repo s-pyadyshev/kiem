@@ -10,7 +10,6 @@ export const mobileMenu = (() => {
 
     const menu = document.querySelector(".menu");
     const body = document.querySelector("body");
-    // const menuItemContact = document.querySelector(".menu__item-contact");
 
     const openMenu = () => {
       mobileMenuToggle.classList.add("active");
@@ -32,20 +31,16 @@ export const mobileMenu = (() => {
       }
     });
 
-    // menuItemContact.addEventListener("click", () => {
-    //   closeMenu();
-    // });
+    const handleResize = throttle(() => {
+      if (
+        window.matchMedia("(min-width: 1025px)").matches &&
+        document.body.classList.contains("menu-active")
+      ) {
+        closeMenu();
+      }
+    }, 200);
 
-    // const handleResize = throttle(() => {
-    //   if (
-    //     window.matchMedia("(min-width: 1200px)").matches &&
-    //     document.body.classList.contains("menu-active")
-    //   ) {
-    //     closeMenu();
-    //   }
-    // }, 200);
-
-    // window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
   };
 
   return {

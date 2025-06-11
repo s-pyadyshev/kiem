@@ -6,17 +6,17 @@ import { teamTabsMobile } from './team-tabs-mobile.js';
 import { growthTabsMobile } from './growth-tabs-mobile.js';
 
 window.addEventListener(
-	'load',
-	() => {
-		mobileMenu.init();
-		tabs.init();
-		accordion.init();
+  'load',
+  () => {
+    mobileMenu.init();
+    tabs.init();
+    accordion.init();
 
-		growthTabs.init();
-		teamTabsMobile.init();
-		growthTabsMobile.init();
+    growthTabs.init();
+    teamTabsMobile.init();
+    growthTabsMobile.init();
 
-		document.querySelector('body').classList.add('page-loaded');
-	},
-	false
+    document.querySelector('body').classList.add('page-loaded');
+  },
+  false
 );
