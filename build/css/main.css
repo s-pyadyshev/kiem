@@ -3153,7 +3153,7 @@ a.footer__logo {
           appearance: none;
   padding: 12px 19px;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.6;
   border-radius: 10px;
   background-color: #F0FAF0;
@@ -3165,7 +3165,6 @@ a.footer__logo {
 @media (min-width: 1200px) {
   .input {
     padding: 14px 30px;
-    font-size: 16px;
   }
 }
 .input:focus, .input:focus-visible {
