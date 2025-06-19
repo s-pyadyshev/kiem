@@ -8,22 +8,21 @@ mixin accordion(title, content)
             +svg("arrow-down")
       article.article.accordion__content-vertical!= content
 
-mixin accordion-vertical-primary(title, content)
-  .accordion-list__item.vertical-primary
-    .accordion-vertical
-      .accordion__header-vertical
-        button.accordion__toggle(data-accordion aria-expanded="false")
-          h3.accordion__title= title
-          .accordion__toggle-icon
-            +svg("arrow-down-bold")
-      article.article.accordion__content-vertical!= content
+//- mixin accordion-vertical-primary(title, content)
+//-   .accordion-list__item.vertical-primary
+//-     .accordion-vertical
+//-       .accordion__header-vertical
+//-         button.accordion__toggle(data-accordion aria-expanded="false")
+//-           h3.accordion__title= title
+//-           .accordion__toggle-icon
+//-             +svg("arrow-down-bold")
+//-       article.article.accordion__content-vertical!= content
 
 mixin accordion-native(title, content, img, open = false)
   details.accordion(open=open ? '' : null)
     summary.accordion__summary
       .accordion__header
         h3.accordion__title.accordion__title--vertical= title
-        //- h3.accordion__title.accordion__title--horizontal= title
         .accordion__icons
           .accordion__icon-closed
             +svg('arrow-up-bold').hidden-laptop
@@ -40,5 +39,3 @@ mixin accordion-native(title, content, img, open = false)
         a.link__more(href="#")
           span.link__more-title Meer informatie
           +svg("arrow-right-bold")
-        
-

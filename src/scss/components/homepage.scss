@@ -1,0 +1,47 @@
+.homepage {
+
+  .header .container {
+    @include desktop-l {
+      padding-inline: $container-padding-desktop * 2;
+    }
+  }
+
+  .footer .container {
+    @include desktop-l {
+      padding-inline: $container-padding-desktop * 2;
+    }
+  }
+
+  a.footer__logo {
+    @include desktop-l {
+      width: 165px;
+      margin-bottom: 60px !important;
+      ;
+    }
+  }
+
+  .footer__info-item a,
+  .footer__info-item p {
+    @include desktop-l {
+      font-size: 18px;
+    }
+  }
+
+  .footer__info-item:nth-child(2) .footer__logo {
+    @include desktop-l {
+      width: 220px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .footer__nav-list {
+    @include desktop-l {
+      gap: 28px;
+    }
+  }
+
+  .menu__link {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+}

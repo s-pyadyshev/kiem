@@ -64,6 +64,7 @@
   @include laptop {
     align-items: flex-start;
     justify-content: flex-start;
+    padding-right: 20px;
   }
 
   a {
@@ -75,7 +76,7 @@
 .footer__info-item:nth-child(1) {
 
   @include laptop {
-    width: 50%;
+    width: 30%;
   }
 
   @include desktop-l {
@@ -86,26 +87,36 @@
 .footer__info-item:nth-child(2) {
 
   @include laptop {
-    width: 50%;
+    width: 40%;
   }
 
   @include desktop-l {
     width: 37%;
   }
 
-  .footer__logo {
-    margin-top: 15px;
-    margin-bottom: 60px;
+}
 
-    @include desktop-l {
-      margin-bottom: 66px;
-    }
+.footer__info-item:nth-child(2) .footer__logo {
+  margin-top: 15px;
+  margin-bottom: 60px;
+
+  @include laptop {
+    margin: 0;
+    margin-bottom: 16px;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+  }
+
+  @include desktop-l {
+    min-height: 57px;
+    margin-bottom: 66px;
   }
 }
 
 .footer__info-item:nth-child(3) {
   @include laptop {
-    width: 100%;
+    width: 30%;
   }
 
   @include desktop-l {
@@ -149,7 +160,12 @@ a.footer__logo {
   margin-bottom: 16px !important;
   width: 80px;
 
+  &:after {
+    display: none !important;
+  }
+
   @include laptop {
+    width: 160px;
     margin-bottom: 64px;
   }
 
@@ -207,13 +223,11 @@ a.footer__logo {
   margin-top: 20px;
 
   @include laptop {
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 30px;
   }
 
-
   @include desktop-l {
-    margin-top: 0;
     margin-bottom: 50px;
   }
 }
@@ -304,6 +318,11 @@ a.footer__logo {
 
     @include laptop {
       margin: 0;
+      font-size: 16px;
+    }
+
+    @include desktop-l {
+      font-size: 20px;
     }
   }
 }
@@ -352,10 +371,6 @@ a.footer__logo {
     font-weight: 700;
   }
 
-  @include laptop {
-    margin-top: 60px;
-  }
-
   @include desktop {
     font-size: 32px;
     margin-top: 40px;
@@ -380,7 +395,7 @@ a.footer__logo {
   width: 130px;
   height: 130px;
 
-  @include laptop {
+  @include desktop-l {
     width: 200px;
     height: 200px;
   }

@@ -7,7 +7,7 @@
   margin-top: 16px;
 
   @include tablet {
-    height: 526px;
+    padding-block: 98px 53px;
     margin-top: 0;
   }
 }
@@ -26,9 +26,8 @@
   }
 
   @include desktop {
-    max-width: 1120px;
+    max-width: 1200px;
     margin-inline: auto;
-
   }
 
   h1 {
@@ -36,7 +35,9 @@
     letter-spacing: -1.2px;
 
     @include desktop {
-      margin-bottom: 30px;
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 36px;
     }
   }
 
@@ -44,7 +45,7 @@
     font-size: 16px;
 
     @include desktop {
-      font-size: 24px;
+      font-size: 20px;
       margin: 0;
       line-height: 1.6;
     }
@@ -81,6 +82,7 @@
     }
 
     @include desktop {
+      max-width: 538px;
       width: 100%;
       height: 100%;
     }
@@ -96,6 +98,10 @@
 }
 
 .hero__link .link__more-title {
+
+  @include laptop {
+    font-size: 18px;
+  }
 
   &:focus,
   &:hover,

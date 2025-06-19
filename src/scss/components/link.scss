@@ -85,16 +85,12 @@
   text-underline-offset: 0.1em;
   text-decoration-thickness: 0.15em;
   transition: text-decoration-color 0.3s ease;
-
   font-size: 16px;
   letter-spacing: 0;
 
   @include laptop {
     font-size: 20px;
   }
-}
-
-.link__more-title {
 
   &:focus,
   &:hover,

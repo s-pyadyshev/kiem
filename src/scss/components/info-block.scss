@@ -1,39 +1,46 @@
 .info-block {
   display: flex;
   flex-direction: column-reverse;
-
-  h2 {
-    letter-spacing: -0.8px;
-  }
-
-  img {
-    width: 100%;
-    margin-top: 44px;
-  }
+  gap: 44px;
 
   @include desktop {
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
+    gap: 80px;
+  }
 
-    img {
-      margin-top: 10px;
-      width: 50%;
-    }
 
-    h2 {
+  h2 {
+    margin-top: 0;
+    letter-spacing: -0.8px;
+
+    @include desktop {
+      font-size: 36px;
+      margin-bottom: 24px;
       letter-spacing: -1.3px;
+    }
+  }
+
+  img {
+    width: 100%;
+
+    @include desktop {
+      width: 50%;
     }
   }
 }
 
 .info-block__text {
   width: 100%;
-  padding-left: 0;
+
+  @include desktop {
+    padding-right: 10px;
+  }
 
   h2 {
     @include desktop {
-      margin-bottom: 49px;
+      margin-bottom: 24px;
     }
   }
 
@@ -41,11 +48,14 @@
     margin-block: 21px 28px;
 
     @include desktop {
-      margin-block: 49px;
+      font-size: 18px;
+      margin-block: 20px;
     }
   }
 
-  @include desktop {
-    padding-left: 146px;
+  .button {
+    @include desktop {
+      font-size: 18px;
+    }
   }
 }

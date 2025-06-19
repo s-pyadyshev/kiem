@@ -4,11 +4,11 @@ prepend vars
   - title = 'Homepage'
 
 append vars
- - pageWrapperClass = 'gradient-lg-top-right'
+ - pageWrapperClass = 'homepage gradient-lg-top-right'
 
 block content
   section 
-    .container
+    .container.container-md
       .hero__top
         .hero__content
           h1
@@ -30,7 +30,7 @@ block content
           img.hidden-desktop(src="images/logo-kiem-md.svg" alt="logo KIEM." width="285" height="282")
 
   section.section-info-block
-    .container.container-md
+    .container.container-sm
       .info-block
         img(src="images/home_content1.jpg" alt="logo KIEM." width="720" height="564")
         .info-block__text
@@ -39,7 +39,7 @@ block content
           a(href="#").button Meer over ons
 
   section.section-offer-block
-    .container.container-md
+    .container.container-sm
       .offer-block
         h2 Ons aanbod voor groei
         p Onze werkwijze is praktisch en betrokken. Geen lange trajecten zonder richting, maar concrete stappen die werken in de praktijk. Met onze trainingen en begeleiding krijg je zicht op wat er staat en waar je naartoe kunt groeien.
@@ -62,47 +62,3 @@ block content
             "images/accordion-image-3.svg",
             false
           )
-
-        //- .accordion-list
-        //-   +accordion-vertical-primary(
-        //-     "KIEM bouwstenen",
-        //-     `<p>Wil je werken aan onderwijskwaliteit, maar weet je niet waar te beginnen? Onze bouwstenen geven houvast, inspiratie en praktische tools. Zo werk je in je eigen tempo aan thema’s als vakmanschap in de klas, krachtig leiderschap, eigenaarschap en samenwerking in teams en kennisrijk en betekenisvol onderwijs.</p>
-        //-       <div>
-        //-         <a class="link__more" href="#">
-        //-           <span class="link__more-title">Meer informatie</span>
-        //-           <svg>
-        //-             <use xlink:href="images/sprites.svg#arrow-right-bold"></use>
-        //-           </svg>
-        //-         </a>
-        //-         <img src="images/accordion-image-1.svg" alt="KIEM bouwstenen"/>
-        //-       </div>
-        //-     `,
-        //-   )
-        //-   +accordion-vertical-primary(
-        //-     "Interim",
-        //-     `<p>Soms heb je tijdelijk iemand nodig die instapt, meedraait en structuur brengt. KIEM biedt interim-professionals met ervaring, overzicht en daadkracht.</p>
-        //-       <div>
-        //-         <a class="link__more" href="#">
-        //-           <span class="link__more-title">Meer informatie</span>
-        //-           <svg>
-        //-             <use xlink:href="images/sprites.svg#arrow-right-bold"></use>
-        //-           </svg>
-        //-         </a>
-        //-         <img src="images/accordion-image-2.svg" alt="Interim"/>
-        //-       </div>
-        //-     `,
-        //-   )
-        //-   +accordion-vertical-primary(
-        //-     "Coaching",
-        //-     `<p>Goede coaching helpt mensen groeien. Bij KIEM bieden we begeleiding die is afgestemd op de persoon en de praktijk.</p>
-        //-       <div>
-        //-         <a class="link__more" href="#">
-        //-           <span class="link__more-title">Meer informatie</span>
-        //-           <svg>
-        //-             <use xlink:href="images/sprites.svg#arrow-right-bold"></use>
-        //-           </svg>
-        //-         </a>
-        //-         <img src="images/accordion-image-3.svg" alt="Coaching"/>
-        //-       </div>
-        //-       `,
-        //-   )

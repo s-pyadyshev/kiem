@@ -20,8 +20,10 @@
 }
 
 .container-sm {
+  max-width: 1680px;
+
   @include desktop-l {
-    padding-inline: 320px;
+    padding-inline: $container-padding-desktop * 2;
   }
 }
 
