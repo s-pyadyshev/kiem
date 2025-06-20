@@ -8,16 +8,6 @@ mixin accordion(title, content)
             +svg("arrow-down")
       article.article.accordion__content-vertical!= content
 
-//- mixin accordion-vertical-primary(title, content)
-//-   .accordion-list__item.vertical-primary
-//-     .accordion-vertical
-//-       .accordion__header-vertical
-//-         button.accordion__toggle(data-accordion aria-expanded="false")
-//-           h3.accordion__title= title
-//-           .accordion__toggle-icon
-//-             +svg("arrow-down-bold")
-//-       article.article.accordion__content-vertical!= content
-
 mixin accordion-native(title, content, img, open = false)
   details.accordion(open=open ? '' : null)
     summary.accordion__summary

@@ -1,4 +1,5 @@
 import { accordion } from './components/accordion.js';
+import { accordionVertical } from './components/accordionVertical.js';
 import { mobileMenu } from './components/mobile-menu.js';
 import { tabs } from './components/tabs.js';
 import { growthTabs } from './growth-tabs.js';
@@ -11,6 +12,7 @@ window.addEventListener(
     mobileMenu.init();
     tabs.init();
     accordion.init();
+    accordionVertical.init();
 
     growthTabs.init();
     teamTabsMobile.init();
