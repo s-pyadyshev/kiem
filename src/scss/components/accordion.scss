@@ -372,17 +372,43 @@
 .accordion:nth-child(2) .accordion__icon-opened,
 .accordion[open]:last-child .accordion__icon-closed,
 .accordion[open]:first-child+.accordion .accordion__icon-closed {
-  display: inline;
+  display: none;
+
+  @include laptop {
+    display: inline;
+  }
 }
+
+.accordion[open] .accordion__icon-opened,
+.accordion:last-child .accordion__icon-opened {
+  display: inline;
+
+  @include laptop {
+    display: none;
+  }
+}
+
 
 .accordion[open] .accordion__icon-closed,
 .accordion:first-child .accordion__icon-closed,
 .accordion:nth-child(2) .accordion__icon-closed,
 .accordion[open]:last-child .accordion__icon-opened,
 .accordion[open]:first-child+.accordion .accordion__icon-opened {
-  display: none;
+  display: inline;
+
+  @include laptop {
+    display: none;
+  }
 }
 
+.accordion[open] .accordion__icon-closed,
+.accordion:last-child .accordion__icon-closed {
+  display: none;
+
+  @include laptop {
+    display: inline;
+  }
+}
 
 .vertical-primary .accordion__header-vertical {
   position: relative;

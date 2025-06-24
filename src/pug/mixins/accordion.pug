@@ -15,10 +15,10 @@ mixin accordion-native(title, content, img, open = false)
         h3.accordion__title.accordion__title--vertical= title
         .accordion__icons
           .accordion__icon-closed
-            +svg('arrow-up-bold').hidden-laptop
+            +svg('arrow-down-bold').hidden-laptop
             +svg("arrow-left").visible-laptop
           .accordion__icon-opened
-            +svg('arrow-down-bold').hidden-laptop
+            +svg('arrow-up-bold').hidden-laptop
             +svg("arrow-right").visible-laptop
     .accordion__content
       .accordion__text

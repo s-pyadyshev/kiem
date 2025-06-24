@@ -824,7 +824,7 @@ body {
 .gradient-lg-top-right {
   background-repeat: no-repeat;
   background-position: 50% 100%, 50% 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='498' fill='none' viewBox='0 0 1920 498'%3E%3Cpath fill='url(%23a)' d='M0 0h1920v498H0z'/%3E%3Cdefs%3E%3ClinearGradient id='a' x1='960' x2='960' y1='0' y2='498' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23fff' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1520' fill='none' viewBox='0 0 1920 1520'%3E%3Cg clip-path='url(%23a)' data-figma-skip-parse='true'%3E%3CforeignObject width='4431.15' height='4431.15' x='-2215.58' y='-2215.58' transform='matrix(-.54986 -.58987 .38203 -.44484 760.697 647.861)'%3E%3Cdiv xmlns='http://www.w3.org/1999/xhtml' style='background:conic-gradient(from 90deg,rgba(255,255,255,0) 0deg,rgba(169,229,47,.2) 80.6817deg,rgba(255,255,255,0) 360deg);height:100%25;width:100%25;opacity:1'/%3E%3C/foreignObject%3E%3C/g%3E%3Cpath d='M0 0h1920v1520H0z' data-figma-gradient-fill='%7B&quot;type&quot;:&quot;GRADIENT_ANGULAR&quot;,&quot;stops&quot;:%5B%7B&quot;color&quot;:%7B&quot;r&quot;:1.0,&quot;g&quot;:1.0,&quot;b&quot;:1.0,&quot;a&quot;:0.0%7D,&quot;position&quot;:0.0%7D,%7B&quot;color&quot;:%7B&quot;r&quot;:0.66274511814117432,&quot;g&quot;:0.89803922176361084,&quot;b&quot;:0.18431372940540314,&quot;a&quot;:0.20000000298023224%7D,&quot;position&quot;:0.22411584854125977%7D,%7B&quot;color&quot;:%7B&quot;r&quot;:1.0,&quot;g&quot;:1.0,&quot;b&quot;:1.0,&quot;a&quot;:0.0%7D,&quot;position&quot;:1.0%7D%5D,&quot;stopsVar&quot;:%5B%7B&quot;color&quot;:%7B&quot;r&quot;:1.0,&quot;g&quot;:1.0,&quot;b&quot;:1.0,&quot;a&quot;:0.0%7D,&quot;position&quot;:0.0%7D,%7B&quot;color&quot;:%7B&quot;r&quot;:0.66274511814117432,&quot;g&quot;:0.89803922176361084,&quot;b&quot;:0.18431372940540314,&quot;a&quot;:0.20000000298023224%7D,&quot;position&quot;:0.22411584854125977%7D,%7B&quot;color&quot;:%7B&quot;r&quot;:1.0,&quot;g&quot;:1.0,&quot;b&quot;:1.0,&quot;a&quot;:0.0%7D,&quot;position&quot;:1.0%7D%5D,&quot;transform&quot;:%7B&quot;m00&quot;:-1099.715332031250,&quot;m01&quot;:764.06896972656250,&quot;m02&quot;:928.520019531250,&quot;m10&quot;:-1179.7438964843750,&quot;m11&quot;:-889.68133544921875,&quot;m12&quot;:1682.5734863281250%7D,&quot;opacity&quot;:1.0,&quot;blendMode&quot;:&quot;NORMAL&quot;,&quot;visible&quot;:true%7D'/%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath d='M0 0h1920v1520H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='250' fill='none' viewBox='0 0 1920 250'%3E%3Cpath fill='url(%23a)' d='M0 0h1920v250H0z'/%3E%3Cdefs%3E%3ClinearGradient id='a' x1='960' x2='960' y1='0' y2='250' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23fff' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fff'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1520' fill='none' viewBox='0 0 1920 1520'%3E%3Cg clip-path='url(%23a)' data-figma-skip-parse='true'%3E%3CforeignObject width='4431.15' height='4431.15' x='-2215.58' y='-2215.58' transform='matrix(-.54986 -.58987 .38203 -.44484 760.697 647.861)'%3E%3Cdiv xmlns='http://www.w3.org/1999/xhtml' style='background:conic-gradient(from 90deg,rgba(255,255,255,0) 0deg,rgba(169,229,47,.2) 80.6817deg,rgba(255,255,255,0) 360deg);height:100%25;width:100%25;opacity:1'/%3E%3C/foreignObject%3E%3C/g%3E%3Cpath d='M0 0h1920v1520H0z' data-figma-gradient-fill='%7B&quot;type&quot;:&quot;GRADIENT_ANGULAR&quot;,&quot;stops&quot;:%5B%7B&quot;color&quot;:%7B&quot;r&quot;:1.0,&quot;g&quot;:1.0,&quot;b&quot;:1.0,&quot;a&quot;:0.0%7D,&quot;position&quot;:0.0%7D,%7B&quot;color&quot;:%7B&quot;r&quot;:0.66274511814117432,&quot;g&quot;:0.89803922176361084,&quot;b&quot;:0.18431372940540314,&quot;a&quot;:0.20000000298023224%7D,&quot;position&quot;:0.22411584854125977%7D,%7B&quot;color&quot;:%7B&quot;r&quot;:1.0,&quot;g&quot;:1.0,&quot;b&quot;:1.0,&quot;a&quot;:0.0%7D,&quot;position&quot;:1.0%7D%5D,&quot;stopsVar&quot;:%5B%7B&quot;color&quot;:%7B&quot;r&quot;:1.0,&quot;g&quot;:1.0,&quot;b&quot;:1.0,&quot;a&quot;:0.0%7D,&quot;position&quot;:0.0%7D,%7B&quot;color&quot;:%7B&quot;r&quot;:0.66274511814117432,&quot;g&quot;:0.89803922176361084,&quot;b&quot;:0.18431372940540314,&quot;a&quot;:0.20000000298023224%7D,&quot;position&quot;:0.22411584854125977%7D,%7B&quot;color&quot;:%7B&quot;r&quot;:1.0,&quot;g&quot;:1.0,&quot;b&quot;:1.0,&quot;a&quot;:0.0%7D,&quot;position&quot;:1.0%7D%5D,&quot;transform&quot;:%7B&quot;m00&quot;:-1099.715332031250,&quot;m01&quot;:764.06896972656250,&quot;m02&quot;:928.520019531250,&quot;m10&quot;:-1179.7438964843750,&quot;m11&quot;:-889.68133544921875,&quot;m12&quot;:1682.5734863281250%7D,&quot;opacity&quot;:1.0,&quot;blendMode&quot;:&quot;NORMAL&quot;,&quot;visible&quot;:true%7D'/%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath d='M0 0h1920v1520H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 }
 
 .gradient-md-top-right {
@@ -1484,7 +1484,27 @@ p {
 .accordion:nth-child(2) .accordion__icon-opened,
 .accordion[open]:last-child .accordion__icon-closed,
 .accordion[open]:first-child + .accordion .accordion__icon-closed {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .accordion[open] .accordion__icon-opened,
+  .accordion:first-child .accordion__icon-opened,
+  .accordion:nth-child(2) .accordion__icon-opened,
+  .accordion[open]:last-child .accordion__icon-closed,
+  .accordion[open]:first-child + .accordion .accordion__icon-closed {
+    display: inline;
+  }
+}
+
+.accordion[open] .accordion__icon-opened,
+.accordion:last-child .accordion__icon-opened {
   display: inline;
+}
+@media (min-width: 1025px) {
+  .accordion[open] .accordion__icon-opened,
+  .accordion:last-child .accordion__icon-opened {
+    display: none;
+  }
 }
 
 .accordion[open] .accordion__icon-closed,
@@ -1492,7 +1512,27 @@ p {
 .accordion:nth-child(2) .accordion__icon-closed,
 .accordion[open]:last-child .accordion__icon-opened,
 .accordion[open]:first-child + .accordion .accordion__icon-opened {
+  display: inline;
+}
+@media (min-width: 1025px) {
+  .accordion[open] .accordion__icon-closed,
+  .accordion:first-child .accordion__icon-closed,
+  .accordion:nth-child(2) .accordion__icon-closed,
+  .accordion[open]:last-child .accordion__icon-opened,
+  .accordion[open]:first-child + .accordion .accordion__icon-opened {
+    display: none;
+  }
+}
+
+.accordion[open] .accordion__icon-closed,
+.accordion:last-child .accordion__icon-closed {
   display: none;
+}
+@media (min-width: 1025px) {
+  .accordion[open] .accordion__icon-closed,
+  .accordion:last-child .accordion__icon-closed {
+    display: inline;
+  }
 }
 
 .vertical-primary .accordion__header-vertical {
@@ -1663,6 +1703,26 @@ article ol p {
 
 article ol li {
   margin-top: 34px;
+}
+
+.article .article-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.article .article-links a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  color: #2d2d2d;
+}
+.article .article-links a:last-child {
+  color: #004953;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .button,
@@ -2052,14 +2112,18 @@ a.button__icon {
   .footer__info {
     width: calc(100% - 300px);
     max-width: 1120px;
-    margin-left: 40px;
     margin-right: 0;
     padding-top: 80px;
   }
 }
 @media (min-width: 1600px) {
   .footer__info {
-    width: calc(100% - 520px);
+    width: calc(100% - 350px);
+  }
+}
+@media (min-width: 1920px) {
+  .footer__info {
+    width: calc(100% - 390px);
   }
 }
 
@@ -2087,7 +2151,12 @@ a.button__icon {
 }
 @media (min-width: 1600px) {
   .footer__info-item:nth-child(1) {
-    width: 24%;
+    width: 28%;
+  }
+}
+@media (min-width: 1920px) {
+  .footer__info-item:nth-child(1) {
+    width: 21%;
   }
 }
 
@@ -2099,6 +2168,11 @@ a.button__icon {
 @media (min-width: 1600px) {
   .footer__info-item:nth-child(2) {
     width: 37%;
+  }
+}
+@media (min-width: 1920px) {
+  .footer__info-item:nth-child(2) {
+    width: 31%;
   }
 }
 
@@ -2358,12 +2432,18 @@ a.footer__logo:after {
     height: 100%;
     width: 320px;
     margin-left: 0;
+    border-top-right-radius: 0;
   }
 }
 @media (min-width: 1600px) {
   .footer__contact {
-    width: 640px;
+    width: 560px;
     padding: 120px;
+  }
+}
+@media (min-width: 1920px) {
+  .footer__contact {
+    width: 610px;
   }
 }
 
@@ -4263,7 +4343,7 @@ a.footer__logo:after {
 }
 @media (min-width: 1600px) {
   .tab-content-laptop {
-    padding: 85px 160px;
+    padding: 85px 140px;
   }
 }
 
@@ -4425,7 +4505,26 @@ a.footer__logo:after {
 }
 
 .tab-content__text {
+  display: none;
   margin-top: -60px;
+}
+.tab-content__text[aria-expanded=true] {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .tab-content__text {
+    margin-top: -120px;
+  }
+}
+@media (min-width: 1200px) {
+  .tab-content__text {
+    display: block;
+    width: 46%;
+    margin-top: 70px;
+  }
+  .tab-content__text h3 {
+    letter-spacing: -0.8px;
+  }
 }
 .tab-content__text h3 {
   font-size: 30px;
@@ -4439,44 +4538,14 @@ a.footer__logo:after {
 .tab-content__text div {
   margin-top: 45px;
 }
-.tab-content__text a {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-decoration: none;
-  font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", sans-serif;
-  font-size: 18px;
-  color: #2d2d2d;
-}
-.tab-content__text a:nth-child(2) {
-  color: #004953;
-  font-weight: 700;
-  text-decoration: underline;
-  margin-top: 5px;
-}
 .tab-content__text img {
   display: none;
-  width: 26px;
-  height: 26px;
+  width: 32px;
   margin: 0px 10px 0px 0px;
 }
 @media (min-width: 768px) {
   .tab-content__text img {
     display: block;
-  }
-}
-@media (min-width: 1025px) {
-  .tab-content__text {
-    margin-top: -120px;
-  }
-}
-@media (min-width: 1200px) {
-  .tab-content__text {
-    width: 46%;
-    margin-top: 70px;
-  }
-  .tab-content__text h3 {
-    letter-spacing: -0.8px;
   }
 }
 
@@ -4491,7 +4560,7 @@ a.footer__logo:after {
 }
 @media (min-width: 1600px) {
   .tab-content__item {
-    width: 37.5%;
+    width: 34%;
   }
 }
 
@@ -4693,18 +4762,6 @@ a.footer__logo:after {
   }
 }
 
-.tab-content__text {
-  display: none;
-}
-.tab-content__text[aria-expanded=true] {
-  display: block;
-}
-@media (min-width: 1200px) {
-  .tab-content__text {
-    display: block;
-  }
-}
-
 .tab-content__text[aria-expanded=true] {
   background-color: #F0FAF0;
   border-radius: 30px;
@@ -4824,39 +4881,45 @@ a.footer__logo:after {
 }
 
 @media (min-width: 1600px) {
-  .homepage .header .container {
+  .header .container {
     padding-inline: 240px;
   }
 }
+
 @media (min-width: 1600px) {
-  .homepage .footer .container {
+  .footer .container {
     padding-inline: 240px;
   }
 }
+
 @media (min-width: 1600px) {
-  .homepage a.footer__logo {
+  a.footer__logo {
     width: 165px;
     margin-bottom: 60px !important;
   }
 }
+
 @media (min-width: 1600px) {
-  .homepage .footer__info-item a,
-  .homepage .footer__info-item p {
+  .footer__info-item a,
+  .footer__info-item p {
     font-size: 18px;
   }
 }
+
 @media (min-width: 1600px) {
-  .homepage .footer__info-item:nth-child(2) .footer__logo {
+  .footer__info-item:nth-child(2) .footer__logo {
     width: 220px;
     margin-bottom: 50px;
   }
 }
+
 @media (min-width: 1600px) {
-  .homepage .footer__nav-list {
+  .footer__nav-list {
     gap: 28px;
   }
 }
-.homepage .menu__link {
+
+.menu__link {
   font-size: 18px;
   letter-spacing: 0;
 }
