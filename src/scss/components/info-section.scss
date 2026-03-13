@@ -49,20 +49,29 @@
     background-color: #F0FAF0;
 
     @media (min-width: 1024px) {
-        gap: 72px;
-        padding: 110px 80px 64px 190px;
+        gap: 24px;
+        padding: 60px;
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-start;
         justify-content: space-between;
     }
+
+    @include desktop-l {
+        gap: 72px;
+        padding: 110px 80px 64px 190px;
+    }
 }
 
 .info-section__image-wrapper {
     @media (min-width: 1024px) {
-        flex: 1 0 625px;
+        flex: 1 0 50%;
         overflow: hidden;
         margin-top: -35px;
+    }
+
+    @include desktop-l {
+        flex: 1 0 625px;
     }
 }
 

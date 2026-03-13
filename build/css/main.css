@@ -3892,20 +3892,31 @@ a.footer__logo:after {
 }
 @media (min-width: 1024px) {
   .info-section__content {
-    gap: 72px;
-    padding: 110px 80px 64px 190px;
+    gap: 24px;
+    padding: 60px;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: space-between;
   }
 }
+@media (min-width: 1600px) {
+  .info-section__content {
+    gap: 72px;
+    padding: 110px 80px 64px 190px;
+  }
+}
 
 @media (min-width: 1024px) {
   .info-section__image-wrapper {
-    flex: 1 0 625px;
+    flex: 1 0 50%;
     overflow: hidden;
     margin-top: -35px;
+  }
+}
+@media (min-width: 1600px) {
+  .info-section__image-wrapper {
+    flex: 1 0 625px;
   }
 }
 
