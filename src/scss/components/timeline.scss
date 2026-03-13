@@ -1,0 +1,152 @@
+.section-timeline {
+  padding: 40px;
+
+  @media (min-width: 1025px) {
+    padding: 60px 80px 90px;
+  }
+}
+
+.timeline {
+  width: 100%;
+  position: relative;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timeline h2 span {
+  color: $color-primary;
+}
+
+.timeline h2 + p {
+  max-width: 690px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.timeline__inner {
+  display: flex;
+  position: relative;
+}
+
+.timeline__step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline__dot {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  background: rgba(232, 118, 58, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline__dot-inner {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: $color-orange;
+  position: relative;
+}
+
+.timeline__dot-inner::after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: calc(1280px / 3 - 100px);
+  height: 1px;
+  background: $color-orange;
+  z-index: -1;
+}
+
+.timeline__step:last-child .timeline__dot-inner::after {
+  display: none;
+}
+
+.timeline__card {
+  margin-top: 24px;
+  padding-right: 24px;
+
+  @media (min-width: 1280px) {
+    margin-top: 40px;
+    padding-right: 100px;
+  }
+}
+
+.timeline__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $color-orange;
+  margin-bottom: 5px;
+
+  @media (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+
+.timeline__body {
+  font-size: 16px;
+  line-height: 1.7;
+
+  @media (min-width: 1280px) {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-timeline {
+    padding: 60px 40px 90px;
+  }
+
+  .timeline__dot {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline__dot-inner {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .timeline {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    max-width: 900px;
+  }
+
+  .timeline::-webkit-scrollbar {
+    display: none;
+  }
+
+  .timeline__inner {
+    width: 800px;
+  }
+
+  .timeline__step {
+    scroll-snap-align: start;
+    min-width: 230px;
+  }
+
+  .timeline__dot-inner::after {
+    top: 13px;
+    left: 0;
+    width: calc(1280px / 3 - 180px);
+  }
+}

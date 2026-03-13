@@ -1,0 +1,12 @@
+mixin tabs-scan-desktop(tabs)
+  .tabs-main.tabs-scan
+    .tabs-container-scan
+      .buttonsWrapper-scan
+        each tab, i in tabs
+          button.tab-button-scan(aria-expanded=i === 0 ? 'true' : 'false')= tab.buttonLabel
+      each tab, i in tabs        
+        if tabs[i]
+          .tab-content__item-scan(aria-expanded=i === tab.aria ? 'true' : 'false')
+            h3!= tabs[i].title
+            article.article-scan
+              != tabs[i].content

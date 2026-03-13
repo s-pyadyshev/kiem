@@ -7,7 +7,6 @@
 // @import "sprites";
 @import "fonts";
 @import "base";
-@import "helpers";
 @import "typography";
 @import "components";
 
@@ -15,5 +14,7 @@
 @import './pages/about.scss';
 @import './pages/contact.scss';
 @import './pages/growth.scss';
+@import './pages/scan.scss';
 @import './pages/interim.scss';
 @import './components/contact-block.scss';
+@import "helpers";

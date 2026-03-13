@@ -12,6 +12,7 @@
 
 
   h2 {
+    font-family: $font-secondary;
     margin-top: 0;
     letter-spacing: -0.8px;
 
@@ -24,8 +25,9 @@
 
   img {
     width: 100%;
+    border-radius: 15px;
 
-    @include desktop {
+    @include laptop {
       width: 50%;
     }
   }
@@ -42,6 +44,10 @@
     @include desktop {
       margin-bottom: 24px;
     }
+
+    span {
+      color: $color-primary;
+    }
   }
 
   p {
@@ -53,9 +59,77 @@
     }
   }
 
+  ul {
+    font-size: 16px;
+    list-style-position: inside;
+    list-style-type: none;
+
+    @include desktop {
+      font-size: 20px;
+    }
+
+    li {
+      display: flex;
+      margin-bottom: 11px;
+
+      &:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: #000;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-top: 8px;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  i {
+    font-variation-settings: "wght" 300;
+  }
+
   .button {
     @include desktop {
       font-size: 18px;
+    }
+  }
+}
+
+.info-block--secondary {
+  align-items: center;
+  flex-direction: column;
+
+  @include laptop {
+    flex-direction: row;
+  }
+}
+
+.info-block--secondary .info-block__text {
+
+  h2 {
+    font-size: 28px;
+
+    @include desktop {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 16px;
+
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+
+  img {
+    @include desktop {
+      width: 760px;
+      height: 460px;
+      object-fit: cover;
     }
   }
 }

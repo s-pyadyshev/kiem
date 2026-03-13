@@ -489,18 +489,3 @@
 .vertical-primary.accordion-list__item:nth-of-type(3) .accordion__content-vertical img {
   height: 40px;
 }
-
-.accordion__mobile {
-  
-  @include desktop {
-    display: none;
-  }
-}
-
-.accordion__desktop {
-  display: none;
-
-  @include desktop {
-    display: block;
-  }
-}

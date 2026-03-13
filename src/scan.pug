@@ -1,0 +1,313 @@
+extends pug/base
+
+prepend vars
+  - title = 'De KIEMscan'
+
+append vars
+ - pageWrapperClass = 'gradient-md-top-right'
+
+block content
+  section.scan.page-header
+    .page-header__inner.container.container-sm
+      .page-header__text
+        h1
+            | De 
+            span KIEM
+            | scan
+        p.page-header__scan-text.page-header__scan-text--one Waar maakt jouw school het verschil en waar blijft potentieel liggen?
+        p.page-header__scan-text Scholen werken dagelijks aan goed onderwijs. Er wordt geanalyseerd, gepland en bijgestuurd. Toch blijft het vaak lastig om scherp te krijgen waar het leren van leerlingen daadwerkelijk wordt versterkt en waar niet.
+        a.link__more.hero__link(href="#")
+            span.link__more-title Wat is de KIEMscan?
+            +svg("arrow-right-bold")
+      img(src="images/kiem-scan.jpg" alt="kiem scan." width="557" height="380").page-header__image
+
+  section.activity
+    .activity__inner
+        h2.activity__title In een school gebeurt veel.
+
+        .activity__questions
+            h3.activity__question Wat verdient prioriteit?
+            h3.activity__question.activity__question--right Waar onstaat spanning in de organisatie of klas?
+        h3.activity__question.activity__question--offset Waar zit de energie in het team?
+
+        p.activity__description De KIEMscan maakt dat zichtbaar. Niet door lijstjes af te vinken, maar door zorgvuldig te kijken naar de samenhang tussen kennis, leiderschap, organisatie en onderwijspraktijk. De uitkomst is geen beoordeling op afstand, maar een helder ontwikkelbeeld waarop gericht gestuurd kan worden.
+
+        blockquote.activity__quote
+            b “De KIEMscan gaf ons een eerlijk en compleet beeld van waar onze school staat. De combinatie van zorgvuldige voorbereiding, een open sfeer tijdens de audit en een scherpe analyse maakte dit traject voor ons bijzonder waardevol.”
+            p.activity__quote-author Kim Meijer,<br /> directeur Basisschool De LinQ
+    
+  section.info-section
+    .container.info-section__wrapper
+        h2.info-section__title Wat is de KIEMscan?
+        .info-section__content
+            +svg("arrow-down-circle")
+            .info-section__image-wrapper
+                img(src="images/wat-is-de-KIEMscan.png" alt="wat is de kiem scan.").info-section__image
+            .info-section__text
+                h2.info-section__subtitle
+                    | Een 
+                    span.info-section__subtitle-highlight integrale 
+                    |en 
+                    span.info-section__subtitle-highlight onderbouwde 
+                    | kwaliteitsanalyse
+
+                p.info-section__paragraph De KIEMscan is een strategische, ontwikkelgerichte audit. Wij analyseren hoe keuzes in beleid en organisatie zichtbaar worden in het handelen in de klas. We toetsen niet alleen of afspraken bestaan, maar onderzoeken of zij daadwerkelijk bijdragen aan het leren van leerlingen.
+
+                p.info-section__paragraph Onze analyse is gebaseerd op bewezen inzichten over effectieve instructie, professioneel leren, leiderschap en kwaliteitszorg, en verbonden met het geldende inspectiekader. Daarmee is de KIEMscan zowel ontwikkelgericht als bestuurlijk verantwoord. Praktijkervaring en wetenschappelijke onderbouwing komen hier samen. Dat maakt onze duiding inhoudelijk scherp en professioneel verdedigbaar.
+
+  section.diagram#diagramm
+    .container.container-sm
+        .diagram__inner
+            h2.h2.h2--description
+                | De 
+                span bouwstenen 
+                | van duurzame kwaliteit
+            p De KIEMscan werkt vanuit vier samenhangende bouwstenen. Juist in de samenhang tussen deze bouwstenen wordt zichtbaar waarom iets werkt – of juist niet landt.
+            .diagram__mobile
+                .diagram__circle
+                    .diagram__circle-wrapper
+                        .diagram__circle-group
+                            button.diagram__button.diagram__button--knowledge(data-section="knowledge")
+                            button.diagram__button.diagram__button--mastery(data-section="mastery")
+                        .diagram__circle-group
+                            button.diagram__button.diagram__button--leadership(data-section="leadership")
+                            button.diagram__button.diagram__button--organization(data-section="organization")
+                .diagram__info
+                    button.diagram__close
+                    span.diagram__title(data-title="knowledge") Kennis
+                    span.diagram__title(data-title="mastery") Meesterschap
+                    span.diagram__title(data-title="leadership") Inspirerend leiderschap
+                    span.diagram__title(data-title="organization") Effectieve organisatie
+                    span.diagram__text(data-text="knowledge") Worden leerlijnen, referentieniveaus en opbrengsten benut als kompas voor didactische keuzes?
+                    span.diagram__text(data-text="mastery") Wat gebeurt er daadwerkelijk in de klas? Hoe zichtbaar zijn instructiekwaliteit, differentiatie en formatief handelen?
+                    span.diagram__text(data-text="leadership") Is er richting, ambitie en professionele ruimte om te groeien?
+                    span.diagram__text(data-text="organization") Ondersteunen structuren en prioriteiten het leren, of werken zij elkaar onbedoeld tegen?
+                    span.diagram__text.diagram__text--default Klik op een bouwsteen
+            .diagram__desktop
+                .diagram__card.diagram__card--knowledge
+                  .diagram__card-border
+                    .diagram__card-cutout
+                    .diagram__card-content
+                        .diagram__card-title Kennis
+                        .diagram__card-text Worden leerlijnen, referentieniveaus en opbrengsten benut als kompas voor didactische keuzes?
+                    .diagram__card-letter K
+                .diagram__card.diagram__card--leadership
+                  .diagram__card-border
+                    .diagram__card-cutout
+                    .diagram__card-content
+                        .diagram__card-title Inspirerend leiderschap
+                        .diagram__card-text Is er richting, ambitie en professionele ruimte om te groeien?
+                    .diagram__card-letter I
+                .diagram__card.diagram__card--mastery
+                  .diagram__card-border
+                    .diagram__card-cutout
+                    .diagram__card-content
+                        .diagram__card-title Meesterschap
+                        .diagram__card-text Wat gebeurt er daadwerkelijk in de klas? Hoe zichtbaar zijn instructiekwaliteit, differentiatie en formatief handelen?
+                    .diagram__card-letter M
+                .diagram__card.diagram__card--organization
+                    .diagram__card-border
+                        .diagram__card-cutout
+                        .diagram__card-content
+                            .diagram__card-title Effectieve organisatie
+                            .diagram__card-text Ondersteunen structuren en prioriteiten het leren, of werken zij elkaar onbedoeld tegen?
+                        .diagram__card-letter E
+
+  section.scan.accordion-block
+    .container
+      .accordion__wrapper
+        h2.h2.h2--title Meer over de KIEMscan
+        .accordion__mobile
+          .accordion-list
+            +accordion-scan-mobile(
+              "Wanneer is de KIEMscan waardevol?",
+              `<p>De KIEMscan is passend wanneer:</p>
+              <ul>
+                <li>De basis op orde is, maar de ambitie stokt</li>
+                <li>Data wordt besproken, maar niet altijd wordt begrepen of vertaald naar handelen</li>
+                <li>De inspectie nadert en het verhaal nog niet stevig voelt</li>
+                <li>Een nieuwe schoolleider snel overzicht wil</li>
+                <li>Een bestuur scherp zicht wil op ontwikkelprioriteiten</li>
+              </ul>
+              <p>Dan is het tijd om kwaliteit in samenhang te bekijken.</p>`,
+              true
+            )
+            +accordion-scan-mobile(
+              "IWaarom wij de  KIEMscan  ontwikkelden",
+              `
+              <p>In ons werk als leerkracht, schoolleider en onderwijskundig adviseur zagen wij steeds opnieuw dezelfde behoefte: een analyse die zichtbaar maakt wat onder de oppervlakte blijft.</p>
+              <p>Scholen beschikken over plannen, analyses en methodes. Teams werken hard en besturen verzamelen data. Toch hebben keuzes niet altijd zichtbaar effect in de klas.</p>
+              <p>Wij misten een instrument dat:</p>
+              <ul> 
+                <li>De dagelijkse praktijk serieus neemt</li>
+                <li>Verder kijkt dan losse cijfers</li>
+                <li>Patronen benoemt in plaats van onderdelen afvinkt</li>
+                <li>Leidt tot duidelijke en onderbouwde ontwikkelkeuzes</li>
+                <li>Leerlingen en professionals centraal stelt</li>
+              </ul>
+              <p>Vanuit die behoefte is de KIEMscan ontstaan.</p>
+              `,
+              false
+            )
+            +accordion-scan-mobile(
+              "Wat levert de KIEMscan op?",
+              `
+              <p>De scan geeft antwoord op vragen als:</p>
+              <ul>
+                <li>Waar staat de school daadwerkelijk?</li>
+                <li>Welke patronen zien we in gedrag en sturing?</li>
+                <li>Waar zit spanning tussen intentie en uitvoering?</li>
+                <li>Wat vraagt nu prioriteit?</li>
+              </ul>
+              <p>Na afloop beschik je over:</p>
+              <ul>
+                <li>Een onderbouwd en integraal kwaliteitsbeeld</li>
+                <li>Zicht op wat stevig staat en waar risico of stagnatie optreedt</li>
+                <li>Drie gerichte ontwikkelprioriteiten</li>
+                <li>Focus voor jaarplan en koers</li>
+                <li>Onderbouwing richting bestuur en inspectie</li>
+              </ul>
+              <p>Wanneer duidelijk wordt waar de grootste ontwikkelkans ligt, ontstaat rust in het team en richting in keuzes.</p>
+              `,
+              false
+            )
+        .accordion__desktop
+          +svg("arrow-down-circle")
+          +tabs-scan-desktop(
+            [
+              {
+                aria: 0,
+                buttonLabel: 'Wanneer is de KIEMscan waardevol?',
+                title: `Wanneer is de <span>KIEM</span>scan waardevol?`,
+                content: `<div class="wrapper"><div class="content"><p>De KIEMscan is passend wanneer:</p>
+              <ul>
+                <li>De basis op orde is, maar de ambitie stokt</li>
+                <li>Data wordt besproken, maar niet altijd wordt begrepen of vertaald naar handelen</li>
+                <li>De inspectie nadert en het verhaal nog niet stevig voelt</li>
+                <li>Een nieuwe schoolleider snel overzicht wil</li>
+                <li>Een bestuur scherp zicht wil op ontwikkelprioriteiten</li>
+              </ul>
+              <p>Dan is het tijd om kwaliteit in samenhang te bekijken.</p></div><img src="images/Wanneer-is-de-KIEMscan-waardevol.png" alt="Wanneer is de KIEMscan waardevol?"/></div>`,
+              },
+              {
+                aria: 1,
+                buttonLabel: 'Waarom wij de KIEMscan ontwikkelden',
+                title: `Waarom wij de <span>KIEM</span>scan ontwikkelden`,
+                content: `<div class='wrapper'><div><p>In ons werk als leerkracht, schoolleider en onderwijskundig adviseur zagen wij steeds opnieuw dezelfde behoefte: een analyse die zichtbaar maakt wat onder de oppervlakte blijft.</p>
+              <p>Scholen beschikken over plannen, analyses en methodes. Teams werken hard en besturen verzamelen data. Toch hebben keuzes niet altijd zichtbaar effect in de klas.</p></div>
+              <div><p>Wij misten een instrument dat:</p>
+              <ul> 
+                <li>De dagelijkse praktijk serieus neemt</li>
+                <li>Verder kijkt dan losse cijfers</li>
+                <li>Patronen benoemt in plaats van onderdelen afvinkt</li>
+                <li>Leidt tot duidelijke en onderbouwde ontwikkelkeuzes</li>
+                <li>Leerlingen en professionals centraal stelt</li>
+              </ul>
+              <p>Vanuit die behoefte is de KIEMscan ontstaan.</p></div></div>`,
+              },
+              {
+                aria: 2,
+                buttonLabel: 'Wat levert de KIEMscan op?',
+                title: `Wat levert de <span>KIEM</span>scan op?`,
+                content: `<div class='wrapper'><div><p>De scan geeft antwoord op vragen als:</p>
+              <ul>
+                <li>Waar staat de school daadwerkelijk?</li>
+                <li>Welke patronen zien we in gedrag en sturing?</li>
+                <li>Waar zit spanning tussen intentie en uitvoering?</li>
+                <li>Wat vraagt nu prioriteit?</li>
+              </ul></div>
+              <div><p>Na afloop beschik je over:</p>
+              <ul>
+                <li>Een onderbouwd en integraal kwaliteitsbeeld</li>
+                <li>Zicht op wat stevig staat en waar risico of stagnatie optreedt</li>
+                <li>Drie gerichte ontwikkelprioriteiten</li>
+                <li>Focus voor jaarplan en koers</li>
+                <li>Onderbouwing richting bestuur en inspectie</li>
+              </ul>
+              <p>Wanneer duidelijk wordt waar de grootste ontwikkelkans ligt, ontstaat rust in het team en richting in keuzes.</p></div></div>`,
+              }
+            ]
+          )
+  section.section-timeline
+    .timeline
+      h2 Hoe de KIEM<span>scan</span> werkt
+      p Wij werken volgens een vaste en zorgvuldige aanpak. Geen lange verbeterlijst. Wel gerichte keuzes die uitvoerbaar en onderbouwd zijn.
+      .timeline__inner
+        .timeline__line
+        .timeline__step
+          .timeline__dot
+            .timeline__dot-inner
+          .timeline__card
+            .timeline__title Voorbereiding
+            .timeline__body
+              | Documentanalyse, teamvragenlijst en gesprek met de schoolleiding om context en ontwikkelfase scherp te krijgen.
+        .timeline__step
+          .timeline__dot
+            .timeline__dot-inner
+          .timeline__card
+            .timeline__title Auditdag
+            .timeline__body Klassenbezoeken, observaties en verdiepende gesprekken.
+        .timeline__step
+          .timeline__dot
+            .timeline__dot-inner
+          .timeline__card
+            .timeline__title Intergrale duiding
+            .timeline__body
+              | Alle bevindingen worden gewogen binnen &eacute;&eacute;n analytisch kader. We benoemen patronen, spanningen en ontwikkelfase.
+        .timeline__step
+          .timeline__dot
+            .timeline__dot-inner
+          .timeline__card
+            .timeline__title Terugkoppeling
+            .timeline__body
+              | Een helder ontwikkelbeeld, vastgelegd in de door ons ontwikkelde KIEMscan-infographic, met een beperkt aantal duidelijke ontwikkelpriorioteiten.
+
+  section.scan.analysis
+    .container.container-sm
+      .content
+        h2.h2.h2--title
+          | Van 
+          span analyse 
+          | naar 
+          span gerichte 
+          | beweging
+        p Een analyse is pas waardevol wanneer zij leidt tot andere gesprekken en andere keuzes in de school. Daarom vertalen wij de uitkomsten naar een beperkt aantal duidelijke ontwikkelprioriteiten. Indien gewenst ondersteunen wij bij de verdere uitwerking, altijd vanuit maatwerk en in nauw overleg.
+        p De KIEMscan is geen eindpunt, maar een zorgvuldig vertrekpunt.
+      img(src="images/analysis.png" alt="Van analyse naar gerichte beweging." width="557" height="380").image
+
+  section.section-info-block
+    .container
+      .info-block.info-block--secondary
+        img(src="images/scan2.jpg" alt="Voor wie is de KIEMscan passend?" width="760" height="480")
+        .info-block__text
+          h2 Voor wie is de <span>KIEM</span>scan passend?
+          p Voor schoolleiders die:
+          ul
+            li Willen weten waar hun school écht staat
+            li Focus willen aanbrengen in hun jaarplan
+            li Zich voorbereiden op inspectie
+            li Ervaren dat er veel gebeurt maar weinig landt
+          p En voor besturen die kwaliteit niet alleen willen volgen, maar versterken.
+
+          i De scan past minder goed wanneer alleen bevestiging wordt gezocht of wanneer er geen ruimte is voor professioneel gesprek.
+
+  section.contact-block.contact-block--secondary
+    .contact-block__inner
+      .contact-block__item
+        img(src="images/phone.svg" alt="phone." width="70" height="70")
+        .svg-wrapper
+          +svg("wave-long-left").wave-long
+          +svg("wave-name-left").wave-short
+      .contact-block__title
+        h2 Klaar om <span>scherp</span> te kijken?
+        p Wanneer kwaliteit eerlijk en professioneel in beeld wordt gebracht, ontstaat ruimte voor gerichte ontwikkeling.
+        a.contact-block__phone(href="#")
+          | We gaan graag met jullie in gesprek. Bel ons of stuur een 
+          span bericht
+          +svg("arrow-right-bold")
+      .contact-block__item
+        .svg-wrapper
+          +svg("wave-name-right").wave-short
+          +svg("wave-long-right").wave-long
+        img(src="images/email.svg" alt="email." width="70" height="70")
+            

@@ -1,0 +1,317 @@
+.scan {
+    $c-primary: #FF9841;
+    $c-secondary: #FF98411A;
+    $c-gren: #F0FAF0;
+    $c-font-green: #A9E52F;
+    $c-border-circle: #B1B1B1;
+}
+
+.scan.page-header {
+    margin-bottom: 40px;
+
+    @include desktop {
+        margin-bottom: 80px;
+    }
+}
+
+.scan .page-header__scan-text {
+    margin-bottom: 30px;
+
+    @include desktop {
+        margin-bottom: 40px;
+    }
+}
+
+.scan .page-header__scan-text--one {
+    max-width: 388px;
+}
+
+.scan .page-header__image {
+    width: 100%;
+    height: 200px;
+    object-position: 0px -20px;
+
+    @include desktop {
+        width: 557px;
+        height: auto;
+    }
+}
+
+.scan .h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.scan:has(.diagram__button--knowledge.diagram__button--active) .diagram__circle {
+    border-color: #FF9841;
+}
+
+.scan:has(.diagram__button--mastery.diagram__button--active) .diagram__circle {
+    border-color: #28D7E0;
+}
+
+.scan:has(.diagram__button--leadership.diagram__button--active) .diagram__circle {
+    border-color: #009FE3;
+}
+
+.scan:has(.diagram__button--organization.diagram__button--active) .diagram__circle {
+    border-color: #994BE2;
+}
+
+.scan.analysis {
+    padding: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @include desktop {
+        padding: 0;
+    }
+}
+
+.scan.analysis .h2 span {
+    color: #A9E52F;
+}
+
+@include desktop {
+    .scan.analysis .h2 {
+        text-align: left;
+    }
+}
+
+.scan.analysis .container-sm {
+    padding: 40px;
+    border: 2px solid #FF9841;
+    border-radius: 30px;
+
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        padding: 75px 105px 35px;
+    }
+}
+
+.scan.analysis .content p:first-of-type {
+    margin-bottom: 40px;
+}
+
+@include desktop {
+    .scan.analysis .content {
+        flex: 1 0 80%;
+        max-width: 720px;
+    }
+}
+
+.scan.analysis .image {
+    margin: 40px auto;
+    max-width: 141px;
+    display: block;
+
+    @include desktop {
+        max-width: 258px;
+        margin: 40px 0;
+    }
+}
+
+.scan.accordion-block .accordion__wrapper {
+    position: relative;
+}
+
+.scan.accordion-block .accordion__wrapper h2 {
+    letter-spacing: 0;
+
+    @include desktop {
+        font-size: 20px;
+        margin-bottom: 45px;
+    }
+}
+
+.scan.accordion-block .accordion__wrapper svg {
+    top: -17px;
+    width: 34px;
+    height: 34px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    color: $color-orange;
+
+    @include desktop {
+        top: -26px;
+        width: 53px;
+        height: 53px;
+    }
+}
+
+.scan.accordion-block .accordion__summary {
+    background-color: #F0FAF0 !important;
+}
+
+.scan.accordion-block ul {
+    padding-left: 40px;
+}
+
+.scan.accordion-block li {
+    padding-bottom: 10px;
+}
+
+.scan.accordion-block p {
+    padding-bottom: 10px;
+}
+
+.scan.accordion-block .accordion__mobile {
+    @include desktop {
+        display: none;
+    }
+}
+
+.scan.accordion-block .accordion__mobile .accordion__content {
+    position: relative;
+}
+
+.scan.accordion-block .accordion__mobile .openIcon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border-left: 2px solid #FF9841;
+    border-top: 2px solid #FF9841;
+    transform: rotate(-135deg);
+}
+
+.scan.accordion-block .accordion__mobile .accordion[data-open="false"] .close {
+    display: none;
+}
+
+.scan.accordion-block .accordion__mobile .accordion[data-open="true"] .openIcon {
+    display: none;
+}
+
+.scan.accordion-block .accordion__mobile .close {
+    display: block;
+    position: relative;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.scan.accordion-block .accordion__mobile .close::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: #FF9841;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.scan.accordion-block .accordion__mobile .close::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: #FF9841;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.scan.accordion-block .tabs-main {
+    margin: 0 !important;
+}
+
+.scan.accordion-block .accordion__desktop {
+    position: relative;
+    border-radius: 30px;
+    background-color: #F0FAF0;
+    padding: 80px;
+    margin-bottom: 40px;
+
+    @include desktop {
+            padding: 80px 190px;
+    }
+}
+
+.scan.accordion-block .accordion__desktop .buttonsWrapper-scan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.scan.accordion-block .accordion__desktop .buttonsWrapper-scan button {
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    color: #FF9841;
+    background-color: white;
+
+    @include desktop {
+        padding: 24px;
+    }
+}
+
+.scan.accordion-block .accordion__desktop .buttonsWrapper-scan button[aria-expanded="true"] {
+    background-color: #FF9841;
+    color: white;
+}
+
+.scan.accordion-block .accordion__desktop .buttonsWrapper-scan button:hover {
+    background-color: #FF9841;
+    color: white;
+}
+
+.scan.accordion-block .accordion__desktop h3 {
+    font-size: 30px;
+}
+
+.scan.accordion-block .accordion__desktop h3 span {
+    color: #A9E52F;
+    font-size: 30px;
+}
+
+.scan.accordion-block .accordion__desktop img {
+    width: 274px;
+
+    @include desktop {
+        margin-right: 140px;
+        margin-top: 25px;
+    }
+}
+
+.scan.accordion-block .accordion__desktop .tab-content__item-scan {
+    margin-top: 40px;
+    width: auto;
+
+    @include desktop {
+        margin-top: 60px;
+    }
+}
+
+.scan.accordion-block .accordion__desktop .tab-content__item-scan[aria-expanded="false"] {
+    display: none;
+}
+
+.scan.accordion-block .accordion__desktop .tab-content__item-scan .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scan.accordion-block .accordion__desktop .tab-content__item-scan .wrapper:nth-of-type(1),
+.scan.accordion-block .accordion__desktop .tab-content__item-scan .wrapper:nth-of-type(2) {
+    align-items: flex-start;
+}
+
+.scan.accordion-block .accordion__desktop .tab-content__item-scan .wrapper:nth-of-type(1) div:first-of-type,
+.scan.accordion-block .accordion__desktop .tab-content__item-scan .wrapper:nth-of-type(2) div:first-of-type {
+    flex: 1 0 50%;
+}

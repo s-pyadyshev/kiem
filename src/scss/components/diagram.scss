@@ -1,0 +1,574 @@
+.diagram {
+    $c-knowledge: #FF9841;
+    $c-knowledge-light: #FF984166;
+    $c-mastery: #28D7E0;
+    $c-mastery-light: #28D7E066;
+    $c-leadership: #009FE3;
+    $c-leadership-light: #009FE366;
+    $c-organization: #994BE2;
+    $c-organization-light: #994BE266;
+    $c-border: #B1B1B1;
+    $c-green: #A9E52F;
+
+    margin-bottom: 80px;
+
+    .h2 {
+        margin-bottom: 0;
+        text-align: center;
+
+        span {
+            color: $c-green;
+        }
+    }
+
+    p {
+        text-align: center;
+        max-width: 750px;
+        margin-inline: auto;
+    }
+}
+
+.diagram__mobile {
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.diagram__circle {
+    border-radius: 50%;
+    width: 241px;
+    height: 241px;
+    border: 2px solid #B1B1B1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: border-color 0.25s;
+}
+
+.diagram__circle-wrapper {
+    width: 235px;
+    height: 235px;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: scale(0.85);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.diagram__button {
+    display: block;
+    margin: 10px 5px;
+    position: relative;
+    color: white;
+    width: 96px;
+    height: 96px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.diagram__button::after {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    transform: scale(0.95, 1);
+    font-weight: 700;
+}
+
+.diagram__button--knowledge {
+    background-color: #FF984166;
+    transform: scale(1.2, 1.2) translate(-10px, -10px);
+    border-bottom-right-radius: 20px;
+}
+
+.diagram__button--knowledge.diagram__button--active {
+    background-color: #FF9841;
+}
+
+.diagram__button--knowledge::after {
+    content: 'K';
+    bottom: 21px;
+    right: 28px;
+}
+
+.diagram__button--mastery {
+    background-color: #28D7E066;
+    transform: scale(1.2) translate(-10px, 10px);
+    border-top-right-radius: 20px;
+}
+
+.diagram__button--mastery.diagram__button--active {
+    background-color: #28D7E0;
+}
+
+.diagram__button--mastery::after {
+    content: 'M';
+    top: 21px;
+    right: 28px;
+}
+
+.diagram__button--leadership {
+    background-color: #009FE366;
+    transform: scale(1.2) translate(10px, -10px);
+    border-bottom-left-radius: 20px;
+}
+
+.diagram__button--leadership.diagram__button--active {
+    background-color: #009FE3;
+}
+
+.diagram__button--leadership::after {
+    content: 'I';
+    bottom: 21px;
+    left: 28px;
+}
+
+.diagram__button--organization {
+    background-color: #994BE266;
+    transform: scale(1.2) translate(10px, 10px);
+    border-top-left-radius: 20px;
+}
+
+.diagram__button--organization.diagram__button--active {
+    background-color: #994BE2;
+}
+
+.diagram__button--organization::after {
+    content: 'E';
+    top: 21px;
+    left: 28px;
+}
+
+.diagram__info {
+    position: relative;
+    width: 100%;
+    height: 216px;
+    margin: 0 auto;
+    border: 2px solid #B1B1B1;
+    padding: 30px 40px 30px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.25s;
+}
+
+.diagram__info::before {
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    content: '';
+    width: 1px;
+    height: 20px;
+    border-left: 1px solid #B1B1B1;
+    transition: border-color 0.25s;
+}
+
+.diagram__info--active {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.diagram__info[data-active-section="knowledge"] {
+    border-color: #FF9841;
+}
+
+.diagram__info[data-active-section="knowledge"]::before {
+    border-left-color: #FF9841;
+}
+
+.diagram__info[data-active-section="mastery"] {
+    border-color: #28D7E0;
+}
+
+.diagram__info[data-active-section="mastery"]::before {
+    border-left-color: #28D7E0;
+}
+
+.diagram__info[data-active-section="leadership"] {
+    border-color: #009FE3;
+}
+
+.diagram__info[data-active-section="leadership"]::before {
+    border-left-color: #009FE3;
+}
+
+.diagram__info[data-active-section="organization"] {
+    border-color: #994BE2;
+}
+
+.diagram__info[data-active-section="organization"]::before {
+    border-left-color: #994BE2;
+}
+
+.diagram__close {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.diagram__info--active .diagram__close {
+    display: flex;
+}
+
+.diagram__close::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: background-color 0.25s;
+}
+
+.diagram__close::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: background-color 0.25s;
+}
+
+.diagram__info[data-active-section="knowledge"] .diagram__close::before,
+.diagram__info[data-active-section="knowledge"] .diagram__close::after {
+    background-color: #FF9841;
+}
+
+.diagram__info[data-active-section="mastery"] .diagram__close::before,
+.diagram__info[data-active-section="mastery"] .diagram__close::after {
+    background-color: #28D7E0;
+}
+
+.diagram__info[data-active-section="leadership"] .diagram__close::before,
+.diagram__info[data-active-section="leadership"] .diagram__close::after {
+    background-color: #009FE3;
+}
+
+.diagram__info[data-active-section="organization"] .diagram__close::before,
+.diagram__info[data-active-section="organization"] .diagram__close::after {
+    background-color: #994BE2;
+}
+
+.diagram__title {
+    display: none;
+    color: #B1B1B1;
+    font-size: 20px;
+    font-weight: 700;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.diagram__info[data-active-section="knowledge"] .diagram__title[data-title="knowledge"] {
+    display: block;
+    color: #FF9841;
+}
+
+.diagram__info[data-active-section="mastery"] .diagram__title[data-title="mastery"] {
+    display: block;
+    color: #28D7E0;
+}
+
+.diagram__info[data-active-section="leadership"] .diagram__title[data-title="leadership"] {
+    display: block;
+    color: #009FE3;
+}
+
+.diagram__info[data-active-section="organization"] .diagram__title[data-title="organization"] {
+    display: block;
+    color: #994BE2;
+}
+
+.diagram__text {
+    display: none;
+    color: #B1B1B1;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.diagram__text--default {
+    display: block;
+}
+
+.diagram__info--active .diagram__text--default {
+    display: none;
+}
+
+.diagram__info[data-active-section="knowledge"] .diagram__text[data-text="knowledge"] {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+.diagram__info[data-active-section="mastery"] .diagram__text[data-text="mastery"] {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+.diagram__info[data-active-section="leadership"] .diagram__text[data-text="leadership"] {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+.diagram__info[data-active-section="organization"] .diagram__text[data-text="organization"] {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+.diagram__desktop {
+    display: none;
+
+    @media (min-width: 1024px) {
+        display: grid;
+        flex-wrap: wrap;
+        width: calc(100% + 20px);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 -20px;
+    }
+}
+
+.diagram__card {
+    flex: 0 1 48%;
+    margin: 10px;
+    height: 324px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.diagram__card::after {
+    content: '';
+    border-radius: 30px;
+    background-color: currentColor;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    clip-path: path('M 0 0 L 140 0 A 140 140 0 0 1 0 140 Z');
+}
+
+.diagram__card-border {
+    border: 2px solid currentColor;
+    border-radius: 30px;
+    padding: 60px;
+    height: 324px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @media (min-width: 1024px) {
+        padding: 70px 80px;
+    }
+
+}
+
+.diagram__card-cutout {
+    position: absolute;
+    width: 325px;
+    height: 325px;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+}
+
+.diagram__card-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: currentColor;
+    margin-bottom: 12px;
+
+    @media (min-width: 1024px) {
+        font-size: 20px;
+    }
+
+    @include desktop {
+    font-size: 30px;
+    }
+}
+
+.diagram__card-text {
+    color: currentColor;
+    line-height: 1.7;
+
+        @media (min-width: 1024px) {
+        font-size: 16px;
+    }
+
+    @include desktop {
+    font-size: 20px;
+    }
+}
+
+.diagram__card-letter {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    z-index: 2;
+}
+
+.diagram__card--knowledge {
+    color: #FF984166;
+}
+
+.diagram__card--knowledge:hover {
+    color: #FF9841;
+}
+
+.diagram__card--knowledge .diagram__card-border {
+    padding-right: 160px;
+}
+
+.diagram__card--knowledge .diagram__card-letter {
+    bottom: 35px;
+    right: 35px;
+}
+
+.diagram__card--knowledge .diagram__card-cutout {
+    bottom: -160px;
+    right: -160px;
+}
+
+.diagram__card--knowledge::after {
+    bottom: 0px;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+.diagram__card--leadership {
+    color: #009FE366;
+}
+
+.diagram__card--leadership:hover {
+    color: #28D7E0;
+}
+
+.diagram__card--leadership .diagram__card-border {
+    padding-left: 200px;
+    padding-right: 40px;
+}
+
+.diagram__card--leadership .diagram__card-letter {
+    bottom: 35px;
+    left: 35px;
+}
+
+.diagram__card--leadership .diagram__card-cutout {
+    bottom: -160px;
+    left: -160px;
+}
+
+.diagram__card--leadership::after {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.diagram__card--mastery {
+    color: #28D7E066;
+}
+
+.diagram__card--mastery:hover {
+    color: #009FE3;
+}
+
+.diagram__card--mastery .diagram__card-letter {
+    top: 35px;
+    right: 35px;
+}
+
+.diagram__card--mastery .diagram__card-border {
+    padding-right: 220px;
+
+    @media (min-width: 1024px) {
+        padding-right: 160px;
+    }
+}
+
+.diagram__card--mastery .diagram__card-cutout {
+    top: -160px;
+    right: -160px;
+}
+
+.diagram__card--mastery::after {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.diagram__card--organization {
+    color: #994BE266;
+}
+
+.diagram__card--organization:hover {
+    color: #994BE2;
+}
+
+.diagram__card--organization .diagram__card-letter {
+    top: 35px;
+    left: 35px;
+}
+
+.diagram__card--organization .diagram__card-border {
+    @media (min-width: 1024px) {
+        padding-left: 200px;
+    }
+}
+
+.diagram__card--organization::after {
+    top: 0;
+    left: 0;
+}
+
+.diagram__card--organization .diagram__card-cutout {
+    top: -160px;
+    left: -160px;
+}
+
+.diagram__circle--section-knowledge {
+ border-color: #FF9841;
+}
+
+.diagram__circle--section-leadership {
+border-color: #009FE3;
+}
+
+.diagram__circle--section-mastery {
+border-color: #28D7E0;
+}
+
+.diagram__circle--section-organization {
+border-color: #994BE2;
+}

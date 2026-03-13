@@ -1,0 +1,112 @@
+.info-section {
+    $c-green-bg: #F0FAF0;
+    $c-green-text: #A9E52F;
+
+    margin-bottom: 40px;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 90px;
+    }
+}
+
+.info-section__wrapper {
+    position: relative;
+}
+
+.info-section__wrapper svg {
+    top: -17px;
+    width: 34px;
+    height: 34px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    color: #FF9841;
+
+    @media (min-width: 1024px) {
+        top: -26px;
+        width: 53px;
+        height: 53px;
+    }
+}
+
+.info-section__title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    letter-spacing: 0;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 45px;
+    }
+}
+
+.info-section__content {
+    position: relative;
+    border-radius: 30px;
+    padding: 0 40px 43px;
+    background-color: #F0FAF0;
+
+    @media (min-width: 1024px) {
+        gap: 72px;
+        padding: 110px 80px 64px 190px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.info-section__image-wrapper {
+    @media (min-width: 1024px) {
+        flex: 1 0 625px;
+        overflow: hidden;
+        margin-top: -35px;
+    }
+}
+
+.info-section__image {
+    display: block;
+    margin: 0 -80px;
+    max-width: calc(100% + 160px);
+    width: calc(100% + 160px);
+    padding: 0 20px;
+
+    @media (min-width: 1024px) {
+        width: 725px;
+        object-fit: contain;
+        object-position: 0px -34px;
+        position: relative;
+        transform: scale(1.2);
+        max-width: 100%;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.info-section__text p {
+    margin-bottom: 30px;
+
+    @media (min-width: 1024px) {
+        padding-right: 56px;
+    }
+}
+
+.info-section__subtitle {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.info-section__subtitle-highlight {
+    color: #A9E52F;
+}
+
+.info-section__paragraph {
+    margin-bottom: 30px;
+
+    @media (min-width: 1024px) {
+        padding-right: 30px;
+    }
+}

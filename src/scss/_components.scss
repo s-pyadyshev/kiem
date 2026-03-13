@@ -1,5 +1,6 @@
 @import "animations";
 @import "components/accordion";
+@import "components/activity";
 @import "components/article";
 @import "components/aside";
 @import "components/bullet-list";
@@ -7,10 +8,12 @@
 @import "components/card";
 @import "components/checkbox";
 @import "components/container";
+@import "components/diagram";
 @import "components/footer";
 @import "components/form";
 @import "components/grid";
 @import "components/header";
+@import "components/info-section";
 @import "components/input";
 @import "components/label";
 @import "components/link";
@@ -26,3 +29,4 @@
 @import "components/info-block";
 @import "components/offer-block";
 @import "components/homepage";
+@import "components/timeline";

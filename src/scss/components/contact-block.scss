@@ -162,6 +162,14 @@
 
 }
 
+.contact-block--secondary .contact-block__item:first-child .svg-wrapper {
+  max-width: 243px;
+}
+
+.contact-block--secondary .contact-block__item:last-child .svg-wrapper {
+  max-width: 231px;
+}
+
 .contact-block__item:last-child {
   justify-content: flex-end;
   bottom: 30px;
@@ -258,6 +266,10 @@
   }
 }
 
+.contact-block--secondary .contact-block__title {
+  max-width: 641px;
+}
+
 .contact-block__title h2 {
   color: $color-text-default;
   font-weight: 400;
@@ -290,6 +302,27 @@
   }
 }
 
+.contact-block--secondary .contact-block__title h2 {
+  @media (min-width: 1200px) {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+}
+
+.contact-block--secondary .contact-block__title p {
+  margin-top: 0;
+  text-align: center;
+  max-width: 240px;
+
+  @media (min-width: 1200px) {
+    max-width: 420px;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 640px;
+  }
+}
+
 a.contact-block__phone {
   font-family: $font-primary;
   display: flex;
@@ -314,15 +347,11 @@ a.contact-block__phone {
   }
 
   svg {
-    display: none;
-
-    @media (min-width: 1600px) {
-      margin-left: 8px;
-      color: $color-orange;
-      width: 13px;
-      height: 13px;
-      display: block;
-    }
+    display: inline-block;
+    margin-left: 4px;
+    color: $color-orange;
+    width: 13px;
+    height: 13px;
   }
 
   @media (min-width: 1200px) {
@@ -334,6 +363,20 @@ a.contact-block__phone {
     font-size: 20px;
     width: fit-content;
     justify-content: flex-start;
+  }
+}
+
+.contact-block--secondary a.contact-block__phone {
+  display: block;
+  width: 180px;
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
+
+  span:first-child {
+    text-decoration: none;
   }
 }
 
@@ -350,5 +393,11 @@ a.contact-block__phone {
 
   @include desktop {
     display: block;
+  }
+}
+
+.contact-block--secondary .contact-block__item:last-child {
+  @media (max-width: 430px) {
+    right: 0;
   }
 }
