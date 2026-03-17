@@ -59,7 +59,7 @@
 
     @include desktop-l {
         gap: 72px;
-        padding: 110px 80px 64px 190px;
+        padding: 110px 80px 75px 190px;
     }
 }
 
@@ -91,6 +91,8 @@
         max-width: 100%;
         width: auto;
         margin: 0;
+        margin-left: -35px;
+        margin-top: -40px;
         padding: 0;
     }
 }

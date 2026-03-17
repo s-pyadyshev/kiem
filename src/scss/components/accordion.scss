@@ -141,7 +141,7 @@
   @include laptop {
     overflow: hidden;
     // transition: max-width 0.5s ease-in-out;
-    height: 470px;
+    height: auto;
     max-width: 160px;
     width: auto;
     display: flex;
@@ -214,11 +214,10 @@
   font-size: 24px;
   margin-top: 0;
 
-  @include laptop {
-    writing-mode: vertical-rl;
+  @include tablet-h {
+    writing-mode: horizontal-tb;
     transform: none;
     font-size: 30px;
-    transform: rotate(180deg);
   }
 }
 
@@ -238,7 +237,7 @@
   justify-content: space-between;
   width: 100%;
   flex-direction: row;
-  padding: 20px 22px;
+  padding: 26px 22px;
 
   @include laptop {
     padding: 0;
@@ -491,6 +490,7 @@
 }
 
 .accordion__mobile {
+  position: relative;
   
   @include desktop {
     display: none;
@@ -503,4 +503,8 @@
   @include desktop {
     display: block;
   }
+}
+
+.accordion__text ul li {
+  color: #2d2d2d;
 }

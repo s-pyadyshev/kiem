@@ -39,6 +39,7 @@
     padding: 0;
     transform: translateX(0);
     max-height: 100%;
+    overflow: auto;
   }
 
   @include desktop {
@@ -220,11 +221,11 @@
 }
 
 .menu__item {
-  height: fit-content;
 
   @include laptop {
     display: flex;
     align-items: center;
+    min-height: 60px;
   }
 }
 

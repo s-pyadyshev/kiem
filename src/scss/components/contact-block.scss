@@ -4,12 +4,13 @@
   margin-inline: auto;
 
   @include desktop {
-    padding: 54px 60px;
+    padding: 54px 60px 80px;
     max-width: 1200px;
   }
 
   @include desktop-l {
     max-width: 1920px;
+    padding: 54px 60px 100px;
   }
 }
 
@@ -166,6 +167,10 @@
   max-width: 243px;
 }
 
+.contact-block--secondary .contact-block__item:last-child {
+  top: -10px;
+}
+
 .contact-block--secondary .contact-block__item:last-child .svg-wrapper {
   max-width: 231px;
 }
@@ -193,7 +198,7 @@
       margin-bottom: 0;
       width: 86px;
       height: 76px;
-    }
+    } 
   }
 
   .svg-wrapper {
@@ -399,5 +404,11 @@ a.contact-block__phone {
 .contact-block--secondary .contact-block__item:last-child {
   @media (max-width: 430px) {
     right: 0;
+  }
+}
+
+.contact-block--secondary {
+  @include tablet {
+    padding-bottom: 140px;
   }
 }

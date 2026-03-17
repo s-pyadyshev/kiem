@@ -47,6 +47,7 @@
 }
 
 .section-info-block {
+  position: relative;
   padding-block: 44px 56px;
 
   @include laptop {

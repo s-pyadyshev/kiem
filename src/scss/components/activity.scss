@@ -6,6 +6,10 @@
     margin-inline: auto;
     margin-bottom: 44px;
 
+    @include tablet {
+        padding: 80px;
+    }
+
     @media (min-width: 1024px) {
         margin-bottom: 80px;
     }
@@ -16,13 +20,13 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-        padding: 30px 22px 20px 22px;
-        border: 2px solid #FF9841;
-        border-radius: 30px;
+    padding: 30px 22px 20px 22px;
+    border: 2px solid #FF9841;
+    border-radius: 30px;
 
-        @include desktop {
-        padding: 73px 60px 60px;
-        }
+    @include desktop {
+        padding: 73px 60px 55px;
+    }
 
 }
 
@@ -53,11 +57,13 @@
 }
 
 .activity__question {
+    font-family: $font-primary;
     position: relative;
     display: inline-flex;
     font-size: 16px;
     color: #FF9841;
     margin-bottom: 37px;
+    text-align: center;
 
     @media (min-width: 1024px) {
         font-size: 22px;
@@ -106,7 +112,12 @@
 }
 
 .activity__question--offset {
+    max-width: 140px;
+    margin-right: auto;
+
     @media (min-width: 1024px) {
+        max-width: 100%;
+        margin-right: 0;
         margin-left: -16%;
     }
 }
@@ -116,7 +127,7 @@
     margin-bottom: 40px;
 
     @media (min-width: 1024px) {
-        max-width: 700px;
+        max-width: 720px;
         margin: 24px auto 80px;
     }
 }
@@ -150,11 +161,12 @@
 
 .activity__quote b {
     font-size: 16px;
+    letter-spacing: 0.4px;
 
     @media (min-width: 1024px) {
         font-size: 22px;
         display: block;
-        max-width: 830px;
+        max-width: 860px;
         margin-inline: auto;
     }
 }

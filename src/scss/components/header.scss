@@ -15,6 +15,10 @@
   padding-top: 41px;
   padding-bottom: 22px;
 
+  @include tablet {
+    gap: 40px;
+  }
+
   @include desktop {
     padding-top: 59px;
     padding-bottom: 22px;
@@ -43,16 +47,24 @@
   >img:last-child {
     margin-top: 0;
     margin-left: 0;
+
+     @media (min-width: 1400px) {
+        width: 188px;
+     }
   }
 
-  @media (min-width:1400px) {
+  @media (min-width: 1400px) {
     flex-direction: row;
     align-items: center;
-    width: 354px;
+    width: 100%;
+    gap: 30px;
+  }
+
+  @media (min-width:1800px) {
 
     >img:last-child {
-      margin-top: 6px;
-      margin-left: 16px;
+      margin-top: 0;
+      margin-left: 0;
     }
   }
 }
@@ -73,6 +85,5 @@
 .header__menu {
   @include laptop {
     min-width: 64%;
-    height: 80px;
   }
 }

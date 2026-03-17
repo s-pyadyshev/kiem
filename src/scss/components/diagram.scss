@@ -25,6 +25,7 @@
         text-align: center;
         max-width: 750px;
         margin-inline: auto;
+        margin-bottom: 30px;
     }
 }
 
@@ -372,9 +373,9 @@
     border-radius: 30px;
     background-color: currentColor;
     position: absolute;
-    width: 280px;
-    height: 280px;
-    clip-path: path('M 0 0 L 140 0 A 140 140 0 0 1 0 140 Z');
+    width: 300px;
+    height: 300px;
+    clip-path: path('M 0 0 L 160 0 A 160 160 0 0 1 0 160 Z');
 }
 
 .diagram__card-border {
@@ -396,18 +397,21 @@
 
 .diagram__card-cutout {
     position: absolute;
-    width: 325px;
-    height: 325px;
+    width: 310px;
+    height: 310px;
     background: white;
     border-radius: 50%;
     border: 2px solid currentColor;
+    transform: scale(1.25);
 }
 
 .diagram__card-title {
+    font-family: $font-secondary;
     font-size: 30px;
     font-weight: 700;
     color: currentColor;
     margin-bottom: 12px;
+    letter-spacing: -0.9px;
 
     @media (min-width: 1024px) {
         font-size: 20px;
@@ -422,12 +426,13 @@
     color: currentColor;
     line-height: 1.7;
 
-        @media (min-width: 1024px) {
+    @media (min-width: 1024px) {
         font-size: 16px;
     }
 
     @include desktop {
-    font-size: 20px;
+        font-size: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -453,7 +458,7 @@
 
 .diagram__card--knowledge .diagram__card-letter {
     bottom: 35px;
-    right: 35px;
+    right: 45px;
 }
 
 .diagram__card--knowledge .diagram__card-cutout {
@@ -472,17 +477,21 @@
 }
 
 .diagram__card--leadership:hover {
-    color: #28D7E0;
+    color: #009FE3;
 }
 
 .diagram__card--leadership .diagram__card-border {
     padding-left: 200px;
     padding-right: 40px;
+
+    @include desktop {
+        padding-left: 220px;
+    }
 }
 
 .diagram__card--leadership .diagram__card-letter {
     bottom: 35px;
-    left: 35px;
+    left: 60px;
 }
 
 .diagram__card--leadership .diagram__card-cutout {
@@ -501,12 +510,12 @@
 }
 
 .diagram__card--mastery:hover {
-    color: #009FE3;
+    color: #28D7E0;
 }
 
 .diagram__card--mastery .diagram__card-letter {
     top: 35px;
-    right: 35px;
+    right: 45px;
 }
 
 .diagram__card--mastery .diagram__card-border {
@@ -538,12 +547,16 @@
 
 .diagram__card--organization .diagram__card-letter {
     top: 35px;
-    left: 35px;
+    left: 50px;
 }
 
 .diagram__card--organization .diagram__card-border {
     @media (min-width: 1024px) {
         padding-left: 200px;
+    }
+
+    @include desktop {
+        padding: 80px 60px 70px 220px;
     }
 }
 
@@ -558,17 +571,17 @@
 }
 
 .diagram__circle--section-knowledge {
- border-color: #FF9841;
+    border-color: #FF9841;
 }
 
 .diagram__circle--section-leadership {
-border-color: #009FE3;
+    border-color: #009FE3;
 }
 
 .diagram__circle--section-mastery {
-border-color: #28D7E0;
+    border-color: #28D7E0;
 }
 
 .diagram__circle--section-organization {
-border-color: #994BE2;
+    border-color: #994BE2;
 }

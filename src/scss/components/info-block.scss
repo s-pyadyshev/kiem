@@ -87,7 +87,13 @@
   }
 
   i {
-    font-variation-settings: "wght" 300;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.5;
+
+    @include desktop {
+      font-size: 20px;
+    }
   }
 
   .button {

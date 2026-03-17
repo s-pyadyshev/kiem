@@ -2,7 +2,7 @@ mixin accordion-scan-mobile(title, content, open = false)
   details.accordion(open=open ? '' : null)
     summary.accordion__summary
       .accordion__header
-        h3.accordion__title.accordion__title--vertical= title
+        h3.accordion__title= title
         .accordion__icons
           .accordion__icon-closed
           span.openIcon
